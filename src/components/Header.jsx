@@ -3,9 +3,9 @@ import logo from '../assets/logotc.png'
 
 // #4f4432 text active
 //#a99c70 hover
-const Header = () => {
+const Header = ({children}) => {
   return (
-    <nav class="navbar navbar-expand-md  sticky-top " data-bs-theme="dark" style={{backgroundColor: "var(--background-color)", border: "3px solid var(--primary-color)"}}>
+    <nav class="navbar navbar-expand-md  sticky-top" data-bs-theme="dark" style={{backgroundColor: "var(--background-color)", border: "3px solid var(--primary-color)"}}>
   <div class="container-fluid ">
     <a class="navbar-brand d-flex justify-content-start px-2" href="#">
       <img src={logo} alt="logo" style={{height: "45px"}}/>
@@ -21,12 +21,7 @@ const Header = () => {
       <div class="offcanvas-body">
         <ul class="navbar-nav flex-grow-1 justify-content-end">
           
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#aboutus" ><span className='insideH1'>About us</span></a></li>
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Product</span></a></li>
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Features</span></a></li>
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Enterprise</span></a></li>
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Support</span></a></li>
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Pricing</span></a></li>
+          {children}
         </ul>
       </div>
     </div>

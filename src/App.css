@@ -7,12 +7,9 @@
   margin-top: 10px;
 }
 
-
 .navigateLink:hover {
   color: var(--primary-color);
 }
-
-
 
 #myVideo {
   object-fit: cover;
@@ -25,13 +22,9 @@
   opacity: 0.6;
 }
 
-
-
-
 /* .insideH1:hover {
   font-weight: lighter;
 } */
-
 
 .imghov {
   width: 100%;
@@ -47,18 +40,20 @@
 
 .atag {
   color: black;
-  transition: 0.1s ease;
+  transition: 0.5s ease;
+  transform: scale(1);
 }
 
 .atag:hover {
   color: var(--primary-color);
+  cursor: pointer;
+  transform: scale(0.9);
 }
-
 
 .swiper {
   width: 100%;
   height: 400px;
-  margin: 20px 0 20px 0
+  margin: 20px 0 20px 0;
 }
 
 .swiper-slide {
@@ -75,4 +70,26 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiperImageScale {
+  position: absolute;
+  z-index: -10;
+  transform: scale(1);
+  transition: 0.5s ease;
+  opacity: 0.8;
+}
+
+.swiperImageScale:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 100%;
+  border: 2px solid rgb(255, 255, 255);
 }
