@@ -1,22 +1,28 @@
-import { useState } from 'react'
+import { createContext, useState } from 'react'
 import './App.css'
 import Dashboard from './components/Dashboard'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import Jumbotron from './components/Jumbotron'
-import Stratergy from './components/Stratergy'
-import SwiperSlider from './components/Swiperslider'
 
-function App() {
 
-  const [getSection, setSection] = useState("");
+export const sectionStore = createContext({
+  handleSection: () => {},
+  getSectioning: "",
+})
+
+const App = () => {
+
+  const [getSectioning, setSectioning] = useState("");
 
   const handleSection = (subject) => {
-    setSection(subject)
+    console.log(subject)
+    setSectioning(subject)
   }
 
+
+
   return (
-    <div>
+    <sectionStore.Provider value={{handleSection, getSectioning}}>
       <Header>
       <li class="nav-item ln  px-4"><a class=" navigateLink" href="#aboutus" ><span className='insideH1'>About us</span></a></li>
           <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Product</span></a></li>
@@ -26,11 +32,8 @@ function App() {
           <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Pricing</span></a></li>
       </Header>
       <Dashboard />
-      <Jumbotron />
-      <Stratergy />
-      <SwiperSlider handleSection={handleSection}/>
       <Footer />
-    </div>
+    </sectionStore.Provider>
   )
 }
 

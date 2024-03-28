@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,9 +12,11 @@ import "../App.css";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { sectionStore } from "../App";
 
-export default function SwiperSlider({handleSection}) {
+export default function SwiperSlider() {
 
+  const {handleSection} = useContext(sectionStore)
 
   const swiperList = [{image: "https://www.realestate.com.au/news-image/w_1280,h_720/v1659868366/news-lifestyle-content-assets/wp-content/production/capi_fe9d4c09db29e7d81b0b40086c49fd3f_bf5b61cdb7c816dbb0878e3bc0f8445a.jpeg?_i=AA", heading: "Landscapes"},
   {image: "https://fancyhouse-design.com/wp-content/uploads/2023/11/The-L-shaped-sofa-positioned-atop-travertine-floors-anchors-the-living-room-in-contemporary-comfort..jpg", heading: "Hallways"},

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Header from './Header'
 import { Link } from 'react-router-dom'
+import { sectionStore } from '../App'
 
-const Sections = ({getSection}) => {
+const Sections = () => {
+
+    const {getSectioning} = useContext(sectionStore);
   return (
     <div>
         <Header>
@@ -12,10 +15,10 @@ const Sections = ({getSection}) => {
         <li class="nav-item ln  px-4"><Link to={"/"} class=" navigateLink"  ><span className='insideH1'>Home</span></Link></li>
     </Header>
     <div>
-    <h1>{getSection}</h1>
+    <h1>{getSectioning}</h1>
     </div>
     </div>
   )
 }
 
-export default Sections
+export default Sections;

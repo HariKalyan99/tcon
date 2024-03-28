@@ -5,7 +5,7 @@ import './index.css'
 import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import Sections from './components/Sections.jsx';
+import Sections from './components/Sections';
 
 const router = createBrowserRouter([
   {path: "/", element: <App />},

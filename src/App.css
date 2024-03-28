@@ -93,3 +93,20 @@
   border-radius: 100%;
   border: 2px solid rgb(255, 255, 255);
 }
+
+
+.swiper-button-next:hover {
+  background-color:   var(--primary-color-hover);    
+}
+.swiper-button-prev:hover {
+  background-color:   var(--primary-color-hover);
+}
+
+.sp {
+  color: var(--primary-color);
+}
+
+.sp:hover {
+  color: var(--primary-color-hover);
+  cursor: pointer;
+}
