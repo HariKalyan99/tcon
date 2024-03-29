@@ -13,21 +13,21 @@ const Commitmentdrawer = ({heading, children}) => {
     style={{
       borderRight: "2px solid var(--primary-color)",
       borderBottom: "2px solid var(--primary-color)",
-      height: "100px",
-      width: "400px",
+      height: "50px",
+      width: "300px",
       margin: "10px",
       padding: "10px",
       boxShadow: "5px 5px 0.5rem"
     }}
     className="d-flex flex-column justify-content-center align-items-start"
   >
-    <h1
+    <h5 
       style={{ textAlign: "left" }}
       onClick={showDrawer}
       className="atag fw-lighter"
     >
       {heading}
-    </h1>{" "}
+    </h5 >{" "}
     <Drawer
       title={heading}
       placement="bottom"
@@ -37,7 +37,7 @@ const Commitmentdrawer = ({heading, children}) => {
       open={open}
       style={{ backgroundColor: "#2b2318" }}
     >
-      <h5  className='fw-bold' style={{ textAlign: "left", color: "var(--primary-color)" }}>
+      <h5  className='fw-light' style={{ textAlign: "left", color: "var(--primary-color)" }}>
         {children}
       </h5>
     </Drawer>{" "}

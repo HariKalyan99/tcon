@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import Header from './Header'
-import { Link, useNavigate } from 'react-router-dom'
+// import { Link, useNavigate } from 'react-router-dom'
 import { sectionStore } from '../App'
 import Footer from './Footer'
 

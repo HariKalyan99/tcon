@@ -22,7 +22,7 @@ const Stratergy = () => {
           className="pb-3 mb-4 "
           style={{ borderBottom: "3px solid var(--primary-color)" }}
         >
-          <h1 >With a keen eye for detail and a commitment</h1>
+          <h1 className="fw-light " style={{color: "var(--primary-color)"}}>With a keen eye for detail and a commitment</h1>
         </div>
         <div className="d-flex flex-wrap justify-content-center">
           <Commitmentdrawer heading={"Research and Planning"}>
