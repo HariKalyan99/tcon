@@ -21,17 +21,17 @@ const Sections = () => {
     </Header>
     <main>
 
-    {secList.map((section, ind) => <div key={ind} className="mb-5 ">
-      <div className='d-flex flex-column justify-content-center position-relative' >
-        <img src={section.hero} alt="hero" style={{width: '100%', opacity: "0.7"}} />
-      <div className="d-flex justify-content-start w-100  position-absolute" >
-            <h1 className="fw-bold text-light m-5" style={{ borderTop: "5px solid #c7b888"}}>
+    {secList.map((section, ind) => <div key={ind} className="mb-5" >
+      <div className='d-flex flex-column justify-content-center position-relative ' >
+        <img src={section.hero} alt="hero" style={{height: '300px',  opacity: "0.7", objectFit: "cover"}} />
+      <div className="d-flex justify-content-start w-100 position-absolute" >
+            <h1 className="fw-bold text-light" style={{ borderTop: "6px solid #eedca3", margin: "60px"}}>
               Home Storages
             </h1>
           </div>
       </div>
     </div>)}
-      <div className='container'>
+      <div className='container '>
       <Thumbsgallery />
       </div>
   <div className="container py-4">

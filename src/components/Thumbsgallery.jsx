@@ -22,7 +22,7 @@ export default function Thumbsgallery() {
         style={{
           '--swiper-navigation-color': '#fff',
           '--swiper-pagination-color': '#fff',
-          height: "600px"
+          height: "575px"
         }}
         spaceBetween={10}
         navigation={true}
@@ -64,7 +64,7 @@ export default function Thumbsgallery() {
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
-        slidesPerView={3.5}
+        slidesPerView={4.5}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
