@@ -4,6 +4,7 @@ import Stratergy from "./Stratergy";
 import SwiperSlider from "./Swiperslider";
 import gif from '../assets/vid.gif'
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Dashboard = () => {
   return (
@@ -35,6 +36,7 @@ const Dashboard = () => {
     <Jumbotron />
     <SwiperSlider />
     <Stratergy />
+    <Footer />
     </>
   );
 };

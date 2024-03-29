@@ -1,9 +1,9 @@
 import { createContext, useState } from 'react'
 import './App.css'
 import Dashboard from './components/Dashboard'
-import Footer from './components/Footer'
 import { Route, Routes} from 'react-router-dom'
 import Sections from './components/Sections'
+import PageNotFound from './components/PageNotFound'
 
 export const sectionStore = createContext({
   handleSection: () => {},
@@ -25,8 +25,8 @@ const App = () => {
       <Routes>
       <Route path='/' element={<Dashboard />}/>
       <Route path='/sections' element={<Sections />}/>
+      <Route path="*" element={<PageNotFound />} />
       </Routes>
-      <Footer />
     </sectionStore.Provider>
   )
 }
