@@ -1,15 +1,9 @@
 
-import React, { useState } from "react";
+import React from "react";
 import Commitmentdrawer from "./Commitmentdrawer";
 
 const Stratergy = () => {
 
-  const [read, setRead] = useState(false);
-
-
-  const handleRead = () => {
-    setRead(!read);
-  }
 
   return (
     <div>
@@ -61,26 +55,7 @@ const Stratergy = () => {
         </div>
       </div>
 
-      <div
-        class="h-50 p-5 m-5"
-        style={{ borderLeft: "1px solid var(--primary-color)" }}
-      >
-        <p>
-          At Tron's constructions, our primary focus is on crafting exceptional
-          interiors and exteriors that redefine modern living. With a passion
-          for design innovation and meticulous attention to detail, {!read && <span className="sp" onClick={() => handleRead()}> Read more...</span>}
-          {read && <span>we
-          specialize in creating captivating spaces that seamlessly blend style,
-          functionality, and comfort. From thoughtfully curated interiors that
-          reflect your personality and lifestyle to striking exteriors that make
-          a statement, we are committed to delivering unparalleled craftsmanship
-          and design excellence. Whether it's transforming a single room or an
-          entire property, trust us to bring your vision to life with
-          creativity, precision, and expertise. Experience the perfect harmony
-          of interior and exterior design with Tron's constructions. </span>}
-          {read && <span className="sp" onClick={() => handleRead()}> close</span>}
-        </p>
-      </div>
+      
     </div>
   );
 };
