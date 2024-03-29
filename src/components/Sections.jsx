@@ -5,6 +5,7 @@ import { sectionStore } from '../App'
 import Footer from './Footer'
 import Thumbsgallery from './Thumbsgallery'
 
+
 const Sections = () => {
 
     const {getSectioning, secList} = useContext(sectionStore);
@@ -30,9 +31,11 @@ const Sections = () => {
           </div>
       </div>
     </div>)}
+      <div className='container'>
+      <Thumbsgallery />
+      </div>
   <div className="container py-4">
 
-<Thumbsgallery />
 
     <div className="row align-items-md-stretch">
       <div className="col-md-6">

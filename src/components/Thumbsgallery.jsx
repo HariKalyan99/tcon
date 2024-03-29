@@ -8,13 +8,13 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
-import '../styles.css';
+import './Thumbsgallery.css';
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 export default function Thumbsgallery() {
-  const [thumbsSwiper, setThumbsSwiper] = useState('hello');
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
     <>
@@ -22,13 +22,13 @@ export default function Thumbsgallery() {
         style={{
           '--swiper-navigation-color': '#fff',
           '--swiper-pagination-color': '#fff',
+          height: "600px"
         }}
-        loop={true}
         spaceBetween={10}
         navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
+        thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2"
+        className="mySwiper21"
       >
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
@@ -63,13 +63,13 @@ export default function Thumbsgallery() {
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
-        loop={true}
         spaceBetween={10}
-        slidesPerView={4}
+        slidesPerView={3.5}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
+        className="mySwiper11"
+        style={{height: "150px"}}
       >
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-1.jpg" />

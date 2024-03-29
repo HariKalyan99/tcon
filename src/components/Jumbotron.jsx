@@ -28,7 +28,7 @@ const Jumbotron = () => {
   <img src={hero1} alt="hero"  className="imghov"/>
   </div>
 </main>
-<main style={{ marginTop: "40px"}}>
+<main style={{ marginTop: "50px"}}>
   <div className="position-relative overflow-hidden text-center bg-body-light ">
   <img src={hero2} alt="hero"  className="imghov"/>
   </div>
