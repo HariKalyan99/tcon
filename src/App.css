@@ -11,16 +11,6 @@
   color: var(--primary-color);
 }
 
-#myVideo {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  opacity: 0.6;
-}
 
 /* .insideH1:hover {
   font-weight: lighter;
@@ -80,6 +70,7 @@
   opacity: 0.8;
 }
 
+
 .swiperImageScale:hover {
   cursor: pointer;
   transform: scale(0.9);
@@ -114,6 +105,8 @@
 .videoDimensions {
   height: 100vh;
 }
+
+
 
 @media (min-width: 1024px) {
   .videoDimensions {

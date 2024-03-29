@@ -49,7 +49,7 @@ export default function SwiperSlider() {
           At Tron's constructions, our primary focus is on crafting exceptional
           interiors and exteriors that redefine modern living. With a passion
           for design innovation and meticulous attention to detail, {!read && <span className="sp" onClick={() => handleRead()}> Read more...</span>}
-          {read && <span>we
+          {read && <span onClick={() => handleRead()}>we
           specialize in creating captivating spaces that seamlessly blend style,
           functionality, and comfort. From thoughtfully curated interiors that
           reflect your personality and lifestyle to striking exteriors that make
