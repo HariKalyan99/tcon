@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,8 +13,13 @@ import './Thumbsgallery.css';
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
-export default function Thumbsgallery() {
+export default function Thumbsgallery({images}) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  const [imgList, setImgList] = useState([]);
+  useEffect(() => {
+    setImgList(images)
+  })
 
   return (
     <>
@@ -30,36 +35,10 @@ export default function Thumbsgallery() {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper21"
       >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-        </SwiperSlide>
+        {imgList.map((img, ind) =>  <SwiperSlide key={ind}>
+      <h1 className='position-absolute text-light bottom-0 mb-5 w-100 text-center'>{img.heading}</h1>
+          <img src={img.img} alt={img.heading} />
+        </SwiperSlide>)}
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
@@ -69,39 +48,14 @@ export default function Thumbsgallery() {
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper11"
-        style={{height: "150px"}}
+        style={{height: "100px"}}
       >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-        </SwiperSlide>
+        {imgList.map((img, ind) =>  <SwiperSlide key={ind}>
+          <img src={img.img} alt={img.heading}/>
+        </SwiperSlide>)}
       </Swiper>
+
+      <h1 className='text-center'>Learn more about our design process</h1>
     </>
   );
 }
