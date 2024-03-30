@@ -31,7 +31,7 @@ const Sections = () => {
         <li className="nav-item ln  px-4"><a className=" navigateLink" href="#" ><span className='insideH1'>Section</span></a></li>
         <li className="nav-item ln  px-4"><a className=" navigateLink" href="#aboutus" ><span className='insideH1'>Gallery</span></a></li>
         <li className="nav-item ln  px-4"><a className=" navigateLink" href="#" ><span className='insideH1'>Features</span></a></li>
-        <li className="nav-item ln  px-4"><Link href="/" onClick={(e) => {e.preventDefault(); navigate("/"); window.location.reload()}} className=" navigateLink"  ><span className='insideH1'>Home</span></Link></li>
+        <li className="nav-item ln  px-4"><Link to="/" onClick={() => navigate(-1)} className=" navigateLink"  ><span className='insideH1'>Home</span></Link></li>
         </ul>
       </div>
     </div>
