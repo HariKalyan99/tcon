@@ -9,6 +9,7 @@ export const sectionStore = createContext({
   handleSection: () => {},
   getSectioning: "",
   secList: [],
+  interiorList: [],
 })
 // hallway: https://squarerooms.com.sg/wp-content/uploads/2023/04/Entertainment-room.jpg  https://www.pufikhomes.com/wp-content/uploads/2023/05/temnyi-kamen-v-dizayne-sovremennogo-doma-v-lesu-v-kanade-pufikhomes-1.jpg https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg
 
@@ -110,12 +111,39 @@ const sectionList = [{
 }  
 ]
 
+const listOfInteriors = [{
+  cover: "https://hips.hearstapps.com/hmg-prod/images/edc050123studiokenyon-004-642dd32116e25.jpg?crop=0.9231606147150823xw:1xh;center,top&resize=1200:*",
+  materials: "https://www.laurameroni.com/sites/default/files/styles/original/public/img-blocco-intro/intro.jpg?itok=tGKyGDzE"
+}, {
+  cover: "https://i.pinimg.com/736x/82/4b/84/824b848714f8e61558c7ea9f67fa1b51.jpg",
+  materials: "https://foyr.com/learn/wp-content/uploads/2021/12/choose-the-materials-for-interior-design.png"
+},
+{
+  cover: "https://images.thdstatic.com/productImages/9b94cd8e-2caa-4d40-b0e2-a25721542d83/svn/honey-home-decorators-collection-bamboo-shades-2258635e-64_1000.jpg",
+  materials: "https://media.licdn.com/dms/image/D4D12AQH4g4cpgEoh2Q/article-cover_image-shrink_720_1280/0/1679652231067?e=2147483647&v=beta&t=IrHmwIiIOkPW3YnXMmD8_k2sOrOqvGJ9wPH42sJK8Es"
+},
+{
+  cover: "https://i.pinimg.com/originals/8c/3e/6b/8c3e6b09f08fb8a7f131904c68bbf72e.jpg",
+  materials: "https://foyr.com/learn/wp-content/uploads/2022/01/determine-materials-for-room-design.png"
+},
+{
+  cover: "https://www.decorilla.com/online-decorating/wp-content/uploads/2023/05/Accent-wall-ideas-with-brick-and-terracotta-in-a-living-room.jpg",
+  materials: "https://bonito.in/wp-content/uploads/2023/04/Materials.jpg"
+},
+{
+  cover: "https://cdn.mos.cms.futurecdn.net/UyakUvMnja7SeuA8y4sUfh-1200-80.jpg",
+  materials: "https://blog.arredodalpozzo.it/hubfs/Articoli%20Blog/Moodboard%20interni/edited_moodboard-interni-moodboard-design.jpg"
+}
+]
+
 const App = () => {
 
 
   const [secList, setSecList] = useState([])
 
   const [getSectioning, setSectioning] = useState("");
+
+  const [interiorList, setInteriorList] = useState(listOfInteriors)
 
   const handleSection = (subject) => {
     setSectioning(subject)
@@ -131,7 +159,7 @@ const App = () => {
 
 
   return (
-    <sectionStore.Provider value={{handleSection, getSectioning, secList}}>
+    <sectionStore.Provider value={{handleSection, getSectioning, secList, interiorList}}>
       <Routes>
       <Route path='/sections' element={<Sections />}/>
       <Route path='/' element={<Dashboard />}/>

@@ -17,3 +17,22 @@
   --bs-offcanvas-border-width: var(--bs-border-width);
   --bs-offcanvas-border-color: #a99c70 !important;
 } 
+
+
+.dashboard {
+  background-color: #a99c70;
+}
+
+.ant-drawer-content-wrapper {
+  height: 50% !important;
+}
+
+
+
+.ant-drawer-body {
+  padding: 0px !important;
+}
+
+.ant-drawer-header {
+  display: none !important;
+}

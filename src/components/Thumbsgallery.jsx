@@ -27,7 +27,8 @@ export default function Thumbsgallery({images}) {
         style={{
           '--swiper-navigation-color': '#fff',
           '--swiper-pagination-color': '#fff',
-          height: "575px"
+          height: "575px",
+          
         }}
         spaceBetween={10}
         navigation={true}
