@@ -7,7 +7,7 @@ const Interiorstyle = () => {
     const {interiorList} = useContext(sectionStore)
   return (
     <div>
-        <h1 className='text-center m-2 text-light' style={{textDecoration: "underline"}}>Design behind boundaries</h1>
+        
         <div className="album py-5">
     <div className="container">
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">

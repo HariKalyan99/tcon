@@ -115,6 +115,7 @@
   background-color: var(--primary-color);
   border: none;
   padding: 10px;
+  color: var(--background-color);
 }
 
 .interiorBtn:hover {

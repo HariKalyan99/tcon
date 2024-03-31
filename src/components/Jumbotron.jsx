@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import hero1 from "../assets/5.png";
 import hero2 from "../assets/6.png";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Jumbotron = () => {
   const [read, setRead] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: 'ease-in-sine',
+        delay: 100,
+      });
+}, [])
 
   const handleRead = () => {
     setRead(!read);
@@ -45,14 +56,14 @@ const Jumbotron = () => {
           )}
         </p>
       </div>
-      <main style={{ marginTop: "20px" }} id="aboutus">
+      <main style={{ marginTop: "20px" }} id="aboutus" data-aos="fade-left">
         <div className="position-relative overflow-hidden text-center bg-body-light ">
-          <img src={hero1} alt="hero" className="imghov" />
+          <img src={hero1} alt="hero"  style={{width: "100%"}}/>
         </div>
       </main>
-      <main style={{ marginTop: "50px" }}>
+      <main style={{ marginTop: "50px" }} data-aos="fade-right">
         <div className="position-relative overflow-hidden text-center bg-body-light ">
-          <img src={hero2} alt="hero" className="imghov" />
+          <img src={hero2} alt="hero"  style={{width: "100%"}}/>
         </div>
       </main>
     </>

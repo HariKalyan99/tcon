@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {  Drawer, theme } from 'antd';
 const Interiormatch = ({interior}) => {
-  const { token } = theme.useToken();
   const [open, setOpen] = useState(false);
   const showDrawer = () => {
     setOpen(true);
