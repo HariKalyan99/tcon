@@ -7,14 +7,7 @@ import 'aos/dist/aos.css'
 const Jumbotron = () => {
   const [read, setRead] = useState(false);
 
-  useEffect(() => {
-    AOS.init({
-        offset: 200,
-        duration: 600,
-        easing: 'ease-in-sine',
-        delay: 100,
-      });
-}, [])
+
 
   const handleRead = () => {
     setRead(!read);
@@ -56,12 +49,12 @@ const Jumbotron = () => {
           )}
         </p>
       </div>
-      <main style={{ marginTop: "20px" }} id="aboutus" data-aos="fade-left">
+      <main style={{ marginTop: "20px" }} id="aboutus" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-once='true'>
         <div className="position-relative overflow-hidden text-center bg-body-light ">
           <img src={hero1} alt="hero"  style={{width: "100%"}}/>
         </div>
       </main>
-      <main style={{ marginTop: "50px" }} data-aos="fade-right">
+      <main style={{ marginTop: "50px" }} data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-once='true'>
         <div className="position-relative overflow-hidden text-center bg-body-light ">
           <img src={hero2} alt="hero"  style={{width: "100%"}}/>
         </div>

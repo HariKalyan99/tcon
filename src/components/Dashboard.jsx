@@ -39,7 +39,7 @@ const Dashboard = () => {
     </main>
     <Jumbotron />
     <SwiperSlider />
-    <Checkpointhero />
+    {/* <Checkpointhero /> */}
     <Interiorstyle />
     <Stratergy />
     <Footer />

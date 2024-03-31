@@ -5,7 +5,6 @@ import 'aos/dist/aos.css'
 const Checkpointhero = () => {
     useEffect(() => {
         AOS.init({
-            offset: 200,
             duration: 600,
             easing: 'ease-in-sine',
             delay: 200,
