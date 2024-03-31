@@ -5,13 +5,13 @@ const Designprocess = ({abt}) => {
     <>
     <hr className="featurette-divider" />
 
-<div className="row featurette m-5">
+<div className="row featurette m-5" data-aos="fade-up"  data-aos-easing="ease-in-sine" data-aos-duration="800" >
   <div className="col-md-7 d-flex justify-content-center align-items-center">
     <div>
 
 
 
-      <p className="lead text-center" >
+      <p className="lead text-center"   >
         {abt.about[0].content}
       </p>
     </div>
@@ -28,7 +28,7 @@ const Designprocess = ({abt}) => {
 </div>
 
 
-<div className="row featurette m-5">
+<div className="row featurette m-5"  data-aos="fade-up"  data-aos-easing="ease-in-sine" data-aos-duration="800" >
   <div className="col-md-7 order-md-2 d-flex justify-content-center align-items-center">
     <div>
       <p className="lead text-center">
@@ -48,7 +48,7 @@ const Designprocess = ({abt}) => {
 </div>
 
 
-<div className="row featurette m-5">
+<div className="row featurette m-5"  data-aos="fade-up"  data-aos-easing="ease-in-sine" data-aos-duration="800" >
   <div className="col-md-7 d-flex justify-content-center align-items-center">
     <div>
 

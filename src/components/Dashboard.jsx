@@ -6,6 +6,7 @@ import gif from '../assets/vid.gif'
 import Header from "./Header";
 import Footer from "./Footer";
 import Interiorstyle from "./Interiorstyle";
+import Checkpointhero from "./Checkpointhero";
 
 
 const Dashboard = () => {
@@ -30,7 +31,7 @@ const Dashboard = () => {
     </main>
     <Jumbotron />
     <SwiperSlider />
-    {/* <Checkpointhero /> */}
+    <Checkpointhero />
     <Interiorstyle />
     <Stratergy />
     <Footer />

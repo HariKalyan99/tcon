@@ -5,6 +5,8 @@ import Footer from './Footer'
 import Thumbsgallery from './Thumbsgallery'
 import Designprocess from './Designprocess'
 import logo from '../assets/logotc.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Sections = () => {
 
@@ -51,7 +53,7 @@ const Sections = () => {
       <h1 className='text-center m-5'>{section.section} Palette</h1>
     </div>)}
       
-      <div className='container '>
+      <div className='container '  data-aos="fade-zoom-in"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true'>
       {secList.map((sec, ind) => <Thumbsgallery key={ind} images={sec.images}/>)}
       </div>
   <div className="container py-4">
