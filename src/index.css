@@ -20,7 +20,8 @@
 
 
 .dashboard {
-  background-color: #a99c70;
+  background: rgb(79,68,50);
+  background: linear-gradient(0deg, rgba(79,68,50,1) 0%, rgba(169,156,112,1) 100%);
 }
 
 .ant-drawer-content-wrapper {
