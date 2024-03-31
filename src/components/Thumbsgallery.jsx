@@ -55,7 +55,7 @@ export default function Thumbsgallery({images}) {
         </SwiperSlide>)}
       </Swiper>
 
-      <h1 className='text-center'>Learn more about our design process</h1>
+      <h1 className='text-center'>Why your home needs a feature.</h1>
     </>
   );
 }

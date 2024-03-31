@@ -67,7 +67,47 @@ const sectionList = [{
       {img: "https://www.ulcdn.net/media/collection%20and%20listing/The_right_kitchen_design_for_your_kitchen.jpg?1694421870", heading: "Modular"},
       {img: "https://www.mydomaine.com/thmb/8BRHy-6VhQr7dCYd2RPLnLq_io4=/5323x0/filters:no_upscale():strip_icc()/DesignWorks-0de9c744887641aea39f0a5f31a47dce.jpg", heading: "Cosmos"},
   ]
-},  
+},
+{
+  section: "Bathrooms",
+  hero: "https://www.decorilla.com/online-decorating/wp-content/uploads/2024/03/Open-concept-bathroom-ideas-by-Decorilla-1-1024x574.jpg",
+  about:[{image: "https://www.homestratosphere.com/wp-content/uploads/2017/11/Asian-style-master-bathroom-mar15.jpg", content: " Bathrooms offer a private sanctuary where individuals can unwind, relax, and rejuvenate. Whether it's taking a soothing bath after a long day or enjoying a few moments of solitude, bathrooms provide a retreat from the hustle and bustle of daily life."}, {image: "https://www.thespruce.com/thmb/S42poV_gd81yZ8ksELyHC1D3vLw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bathroom-design-ideas-and-inspiration-4101873-hero-c194d168c4aa4607b2f9a345c778d750.jpg", content: "Bathrooms are highly functional spaces equipped with essential fixtures and amenities such as toilets, sinks, showers, and bathtubs. Well-designed bathrooms optimize convenience and efficiency, making daily routines more manageable and enjoyable."}, {image: "https://hips.hearstapps.com/hmg-prod/images/edc120113yovanovitch-02-659dcbe52236b.jpg?crop=0.646xw:1.00xh;0.354xw,0&resize=1200:*", content: "Bathrooms contribute to the overall aesthetics of a home's interior design. Stylish fixtures, finishes, and decor elements enhance the visual appeal of the space, creating a cohesive and harmonious look throughout the home."}],
+  images: [
+      {img: "https://images.ctfassets.net/79nimht05j33/1KL3nI4ofkg6MUy3PdNm05/c1601ed36fa9ab82b57b96f3e9ec67b6/DALL_E_2023-11-21_18.52.17_-_A_hyper-realistic_image_of_a_Shaker_style_bathroom_vanity_with_a_more_homey_and_welcoming_atmo.jpeg?w=1500&h=857&fl=progressive&q=70&fm=jpg", heading: "Shaker style vanity"},
+      {img: "https://www.home-designing.com/wp-content/uploads/2019/01/modern-bathroom-tile.jpg", heading: "Poetic"},
+      {img: "https://www.home-designing.com/wp-content/uploads/2018/05/luxury-master-bathrooms.jpg", heading: "sky connect"},
+      {img: "https://moonmirror.co/cdn/shop/articles/Untitled_design_4_d59f8ef3-df43-4f32-bf29-ba6a88a29d11.png?v=1653990324&width=2048", heading: "Chic space"},
+      {img: "https://www.home-designing.com/wp-content/uploads/2016/11/divided-shower-and-bathroom-design.jpg", heading: "Divided"},
+      {img: "https://cdn.homedit.com/wp-content/uploads/2018/02/Rustic-bathroom-with-fireplace-and-clawfoot-bath.jpg", heading: "Rustic"},
+  ]
+},
+{
+  section: "Closets",
+  hero: "https://www.99acres.com/microsite/wp-content/blogs.dir/6161/files/2023/06/Modern-wardrobe-designs-for-bedrooms_walk-in-wardrobe.jpg",
+  about:[{image: "https://media.designcafe.com/wp-content/uploads/2020/06/11115225/closet-design-ideas.jpg", content: "Closets provide valuable storage space for clothing, shoes, linens, and other personal belongings, helping to keep living areas organized and clutter-free. Proper storage solutions enhance functionality and efficiency, making it easier to locate items and maintain tidiness."}, {image: "https://www.ikea.com/images/a-dark-haired-woman-hangs-a-dress-on-the-clothes-rail-of-a-w-def5eeb58cf31a0976f59c53e32fab6d.jpg?f=xl", content: "Closets help optimize space utilization by providing vertical storage solutions and maximizing storage capacity within a limited footprint. Efficient use of closet space frees up room in other areas of the home, reducing clutter and creating a more spacious living environment."}, {image: "https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2024-1704560007-SGQ6F/existing-real-home-assets-1704643706-yeqEk/wardrobe-1705482653-4KIC1/23-1708431775-wJIS0.jpg", content: " Closets contribute to the overall aesthetics of a home's interior design. Stylish closet systems with attractive finishes and hardware enhance the visual appeal of living spaces, creating a cohesive and harmonious environment."}],
+  images: [
+      {img: "https://www.europeancabinets.com/wp-content/uploads/2017/10/banner-walk-in-closets-shutterstock_348159044.jpg", heading: "Walk-In closet"},
+      {img: "https://telkitchens.in/srckchn/uploads/2022/02/Difference-between-Sliding-and-Hinged-Wardrobes-Glass-and-Mirror-Wardrobes-1024x576.jpg", heading: "Hinged wardrobes"},
+      {img: "https://www.marthastewart.com/thmb/bXXrR2pi0mEgJyy7EEGf43C_quw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/closet-organizing-california-closet-1119-119ecc49ab144aceaf9606e10b01a332.jpeg", heading: "Linen closet"},
+      {img: "https://skyboxrealty.com/wp-content/uploads/2018/02/338SPEAR_40E_CLOSET.jpg", heading: "Spear closet"},
+      {img: "https://www.aertsen.in/wp-content/uploads/2022/12/Types-of-Modern-Wardrobe-Designs.jpg", heading: "Modern"},
+      {img: "https://graceinmyspace.com/wp-content/uploads/2019/02/Utility-Closet-Organization-www.graceinmyspace.com_.jpg", heading: "Utility"},
+  ]
+},
+{
+  section: "Bedrooms",
+  hero: "https://amazingarchitecture.com/storage/6227/comfortable-modern-bedroom-with-elegant-wood-headboard.jpg",
+  about:[{image: "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/05/Minimalist-modern-boho-bedroom.jpg", content: " Bedrooms serve as private retreats where individuals can unwind, recharge, and escape from the stresses of daily life. They offer a sanctuary for solitude and introspection, allowing individuals to enjoy moments of peace and quiet away from the hustle and bustle of the outside world."}, {image: "https://uptodateinteriors.com/wp-content/uploads/2023/09/minimalist-boho-bedroom-700x620.jpeg", content: "edrooms provide a dedicated space for rest and sleep, essential for physical and mental well-being. Quality sleep is crucial for overall health, productivity, and mood, and bedrooms offer a tranquil environment conducive to relaxation and rejuvenation."}, {image: "https://images.squarespace-cdn.com/content/v1/55412ec5e4b0340beb365fa9/1549599750266-DMCR1X6BT0RR9KBL6GVK/Palmer_bedroom_redo_WEB-1.jpg", content: "  Bedrooms serve multiple purposes beyond sleep, often doubling as home offices, exercise spaces, or relaxation areas. Their versatility allows individuals to adapt the space to suit their evolving needs and lifestyles, maximizing functionality and usability."}],
+  images: [
+      {img: "https://www.decorilla.com/online-decorating/wp-content/uploads/2023/05/Moody-contemporary-bedroom-style-by-Ibrahim-H.jpg", heading: "Contemporary "},
+      {img: "https://www.bhg.com/thmb/NU8mUDOyT-bXTl7MYs_5SxuqDLM=/5505x0/filters:no_upscale():strip_icc()/103194777_preview-2ed9468ab3fa4d4c8fa481011faaed6d.jpg", heading: "Mediterranean"},
+      {img: "https://www.thespruce.com/thmb/vGBaijNPZ8ZEsMJb3oG86BgNGJ0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/CoastalCottagebyAmandaBarnesInteriors12-14e7f6dbba4747d4aca7688abc9285da-bada65516443415b82153b06d9492dcf.jpeg", heading: "Coastal"},
+      {img: "https://www.thatscandinavianfeeling.com/wp-content/uploads/2018/09/bedroom_cozy_window_light.jpg", heading: "Scandinavian"},
+      {img: "https://havenly.com/blog/wp-content/uploads/2021/05/eclectic-3.jpeg", heading: "Eclectic"},
+      {img: "https://www.decorilla.com/online-decorating/wp-content/uploads/2023/05/Colorful-orange-boho-bedroom-ideas.jpg", heading: "Bohemian"},
+      {img: "https://www.home-designing.com/wp-content/uploads/2022/08/minimalist-boho-bedroom.jpg", heading: "Boho bedrooms"},
+  ]
+}  
 ]
 
 const App = () => {

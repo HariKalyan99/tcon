@@ -48,7 +48,7 @@ const Sections = () => {
             </h1>
           </div>
       </div>
-      <h1 className='text-center m-5'>{section.section} Gallery</h1>
+      <h1 className='text-center m-5'>{section.section} Pallete</h1>
     </div>)}
       
       <div className='container '>
