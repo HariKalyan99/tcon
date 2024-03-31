@@ -1,7 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,6 +19,14 @@ export default function SwiperSlider() {
   
   const [read, setRead] = useState(false);
 
+  useEffect(() => {
+    AOS.init({
+        duration: 600,
+        easing: 'ease-in-sine',
+        delay: 100,
+        once: true
+      });
+}, [])
 
   const handleRead = () => {
     setRead(!read);
@@ -87,6 +96,7 @@ export default function SwiperSlider() {
         }}
         modules={[Pagination, Navigation]}
         className="mySwiper"
+        data-aos="slide-left"
       >
 
   

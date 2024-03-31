@@ -10,7 +10,7 @@ const Interiorstyle = () => {
         AOS.init({
             duration: 600,
             easing: 'ease-in-sine',
-            delay: 200,
+            delay: 100,
           });
     }, [])
 
