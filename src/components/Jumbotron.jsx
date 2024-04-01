@@ -16,10 +16,12 @@ const Jumbotron = () => {
   };
   return (
     <>
+    <hr />
       <div
-        class="h-50 m-4 p-2"
+        class="h-50 mt-5 container p-2 text-center"
         style={{
           borderRight: "1px solid var(--background-color)",
+          borderLeft: "1px solid var(--background-color)",
           color: "var(--primary-color)",
         }}
       >
@@ -50,6 +52,7 @@ const Jumbotron = () => {
             </span>
           )}
         </p>
+      <hr />
       </div>
       <div className='d-flex justify-content-center mt-5 mb-5' data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' style={{height: "100%"}}>
         <div style={{width: "100%", height: "100%"}}>

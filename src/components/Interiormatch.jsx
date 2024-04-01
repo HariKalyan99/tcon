@@ -13,7 +13,7 @@ const Interiormatch = ({interior}) => {
     height: 400,
     overflow: 'hidden',
     borderRadius: "0px",
-    boxShadow: "5px 5px 0.4rem black"
+    boxShadow: "5px 5px 0.6rem black",
   };
   return (
     <div style={containerStyle}>
@@ -21,7 +21,7 @@ const Interiormatch = ({interior}) => {
       <div
         className='position-absolute bottom-0 d-flex justify-content-center align-items-center w-100 mb-5'
       >
-        <button onClick={showDrawer} className='interiorBtn'>
+        <button onClick={showDrawer} className='interiorBtn' style={{boxShadow: "10px 5px 0.6rem black"}} data-aos="fade-up">
           Interior palatte 
         </button>
       </div>

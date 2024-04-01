@@ -50,7 +50,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,14 +68,12 @@
   z-index: -10;
   transform: scale(1);
   transition: 0.5s ease;
-  opacity: 0.8;
 }
 
 
 .swiperImageScale:hover {
   cursor: pointer;
   transform: scale(0.9);
-  opacity: 1;
 }
 
 .swiper-button-next,
@@ -107,6 +105,8 @@
 
 .videoDimensions {
   height: 100vh;
+  border: 2px solid var(--background-color);
+  box-shadow: 5px 5px 0.6rem var(--background-color);
 }
 
 

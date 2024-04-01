@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 
 import "../App.css";
 
+
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
@@ -40,9 +41,10 @@ export default function SwiperSlider() {
 
   return (
     <>
+    <hr />
     <div
-        class="h-50 m-4 p-2"
-        style={{ borderLeft: "1px solid var(--background-color)",  color: "var(--primary-color)" }}
+        class="h-50 container text-center"
+        style={{ borderLeft: "1px solid var(--background-color)",borderRight: "1px solid var(--background-color)",  color: "var(--primary-color)" }}
       >
         <p>
           At Tron's constructions, our primary focus is on crafting exceptional
@@ -60,6 +62,7 @@ export default function SwiperSlider() {
           {read && <span className="sp" onClick={() => handleRead()}> close</span>}
         </p>
       </div>
+      <hr />
       <h1 className="text-center text-light" style={{textDecoration: "underline"}}>Constructing Creativity</h1>
       <Swiper
         slidesPerView={1}
@@ -67,7 +70,8 @@ export default function SwiperSlider() {
           "--swiper-navigation-color": "var(--background-color)",
           "--swiper-pagination-color": "var(--background-color)",
           marginTop: "50px",
-          marginBottom: "50px"
+          marginBottom: "50px",
+          boxShadow: "5px 5px 0.6rem var(--background-color)",
         }}
         navigation={true}
         pagination={{
@@ -89,8 +93,8 @@ export default function SwiperSlider() {
       >
 
   
-        {swiperList.map((slide) => <SwiperSlide key={slide.image} onClick={() => handleSection(slide.heading)}>
-          <div className="d-flex justify-content-center flex-column">
+        {swiperList.map((slide) => <SwiperSlide key={slide.image} onClick={() => handleSection(slide.heading)} >
+          <div className="d-flex justify-content-center flex-column" >
             <Link to={"/sections"}>
               <img
                 src={slide.image}
@@ -99,7 +103,7 @@ export default function SwiperSlider() {
               />
             </Link>
           </div>
-          <div className="d-flex justify-content-center w-100">
+          <div className="d-flex justify-content-center w-100" >
             <h1 className="fw-bold text-light bottom-0 position-absolute mb-5">
               {slide.heading}
             </h1>

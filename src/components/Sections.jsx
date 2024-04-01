@@ -1,5 +1,5 @@
-import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React, { useContext, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { sectionStore } from '../App'
 import Footer from './Footer'
 import Thumbsgallery from './Thumbsgallery'
@@ -11,6 +11,16 @@ import 'aos/dist/aos.css'
 const Sections = () => {
 
     const {secList} = useContext(sectionStore);
+
+    useEffect(() => {
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+      }, 100)
+    }, ["/sections"]);
     
     const navigate = useNavigate();
   return (
@@ -43,7 +53,7 @@ const Sections = () => {
       <div className='d-flex flex-column justify-content-center position-relative ' >
       
         <img src={section.hero} alt="hero" style={{height: '300px',  opacity: "0.7", objectFit: "cover"}} />
-        <button onClick={() => navigate(-1)}>Go back</button>
+        
       <div className="d-flex justify-content-start w-100 position-absolute" >
             <h1 className="fw-bold text-light" style={{ borderTop: "6px solid #eedca3", margin: "60px"}}>
               {section.section}
@@ -61,7 +71,10 @@ const Sections = () => {
     
     {secList.map((abt, ind) => <Designprocess key={ind} abt={abt}/>)}
 
-
+    <hr />
+    <div className='d-flex justify-content-center'>
+    <button onClick={() => navigate(-1)} className='interiorBtn' style={{boxShadow: "5px 5px 0.6rem black"}}>Home</button>
+    </div>
   </div>
 </main>
     <Footer />
