@@ -12,7 +12,7 @@ import Checkpointhero from "./Checkpointhero";
 const Dashboard = () => {
 
   return (
-    <div className="dashboard">
+    <div className="dashboard" id="dashboard">
       <Header />
       <main className="videoDimensions">
       <div className="position-relative overflow-hidden text-center bg-body-light h-100" >

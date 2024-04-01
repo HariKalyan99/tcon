@@ -33,17 +33,17 @@ const Sections = () => {
         <li className="nav-item ln  px-4"><a className=" navigateLink" href="#" ><span className='insideH1'>Section</span></a></li>
         <li className="nav-item ln  px-4"><a className=" navigateLink" href="#aboutus" ><span className='insideH1'>Gallery</span></a></li>
         <li className="nav-item ln  px-4"><a className=" navigateLink" href="#" ><span className='insideH1'>Features</span></a></li>
-        <li className="nav-item ln  px-4"><Link to="/" onClick={() => navigate("/")} className=" navigateLink"  ><span className='insideH1'>Home</span></Link></li>
         </ul>
       </div>
     </div>
   </div>
 </nav>
     <main>
-
     {secList.map((section, ind) => <div key={ind} className="mb-5" >
       <div className='d-flex flex-column justify-content-center position-relative ' >
+      
         <img src={section.hero} alt="hero" style={{height: '300px',  opacity: "0.7", objectFit: "cover"}} />
+        <button onClick={() => navigate(-1)}>Go back</button>
       <div className="d-flex justify-content-start w-100 position-absolute" >
             <h1 className="fw-bold text-light" style={{ borderTop: "6px solid #eedca3", margin: "60px"}}>
               {section.section}
