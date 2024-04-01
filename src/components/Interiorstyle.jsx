@@ -30,8 +30,8 @@ const Interiorstyle = () => {
     </div>
   </div>
   <div className='d-flex justify-content-center mt-5 mb-5' data-aos="fade-left"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' style={{height: "100%"}}>
-        <div style={{width: "100%", height: "100%"}}>
-            <img src="https://zocohome.com/cdn/shop/files/zoco-home-design-book-arranging-things-51810130002263.jpg?v=1689949148&width=1800" alt="check-hero" style={{width: "100%", objectFit: "contain"}} />
+        <div style={{width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.5)"}}>
+            <img src="https://zocohome.com/cdn/shop/files/zoco-home-design-book-arranging-things-51810130002263.jpg?v=1689949148&width=1800" alt="check-hero" style={{width: "100%", objectFit: "contain", position: "relative", zIndex: "-1"}} />
         </div>
     </div> 
     </div>

@@ -122,6 +122,8 @@
   background-color: var(--primary-color-hover);
 }
 
+
+
 @media (min-width: 1024px) {
   .videoDimensions {
     height: 75vh;
