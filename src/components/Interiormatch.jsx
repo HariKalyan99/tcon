@@ -13,6 +13,7 @@ const Interiormatch = ({interior}) => {
     height: 400,
     overflow: 'hidden',
     borderRadius: "0px",
+    boxShadow: "5px 5px 0.4rem black"
   };
   return (
     <div style={containerStyle}>

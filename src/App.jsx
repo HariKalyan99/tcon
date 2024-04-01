@@ -1,9 +1,9 @@
 import { createContext, useEffect, useState } from 'react'
 import './App.css'
-import Dashboard from './components/Dashboard'
-import { Route, Routes} from 'react-router-dom'
-import Sections from './components/Sections'
-import PageNotFound from './components/PageNotFound'
+// import Dashboard from './components/Dashboard'
+import { Outlet} from 'react-router-dom'
+// import Sections from './components/Sections'
+// import PageNotFound from './components/PageNotFound'
 
 export const sectionStore = createContext({
   handleSection: () => {},
@@ -160,11 +160,7 @@ const App = () => {
 
   return (
     <sectionStore.Provider value={{handleSection, getSectioning, secList, interiorList}}>
-      <Routes>
-      <Route path='/sections' element={<Sections />}/>
-      <Route path='/' element={<Dashboard />}/>
-      <Route path="*" element={<PageNotFound />} />
-      </Routes>
+      <Outlet />
     </sectionStore.Provider>
   )
 }

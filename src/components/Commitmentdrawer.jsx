@@ -16,7 +16,7 @@ const Commitmentdrawer = ({heading, children}) => {
       height: "50px",
       width: "300px",
       margin: "10px",
-      boxShadow: "5px 5px 0.5rem"
+      boxShadow: "5px 5px 0.5rem black"
     }}
     className="d-flex flex-column justify-content-center align-items-start"
   >

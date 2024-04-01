@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import herocon3 from '../assets/herocon3.png'
 
 const Checkpointhero = () => {
     useEffect(() => {
@@ -16,9 +17,8 @@ const Checkpointhero = () => {
     <div className='d-flex justify-content-center' data-aos="fade-up" style={{height: "100%"}}>
         <div style={{width: "100%", height: "100%"}}>
             <img src="https://i.pinimg.com/originals/ed/2b/b4/ed2bb465e08b252525d65748fb7bfff3.jpg" alt="check-hero" style={{height: "100%", width: "100%", objectFit: "contain"}} />
-
-            <div style={{backgroundColor: "white", height: "60%", width: "40%", position: "absolute", zIndex: "10", top: "20%", right: "10%"}}>
-                <h1>Hello</h1>
+            <div style={{backgroundColor: "white", height: "50%", width: "30%", position: "absolute", zIndex: "10", top: "30%", right: "10%"}}>
+                <img src={herocon3} alt="hero-content" style={{objectFit: "cover",height: "80%", margin: "10% 10% 10% 15%"}}/>
             </div>
         </div>
     </div>

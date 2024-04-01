@@ -32,8 +32,8 @@ const Dashboard = () => {
     <Jumbotron />
     <SwiperSlider />
     <Checkpointhero />
+    <Stratergy />
     <Interiorstyle />
-    {/* <Stratergy /> */}
     <Footer />
     </div>
   );

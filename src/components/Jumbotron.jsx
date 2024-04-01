@@ -3,6 +3,8 @@ import hero1 from "../assets/5.png";
 import hero2 from "../assets/66.jpg";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import herocon1 from '../assets/herocon.png'
+import herocon2 from '../assets/herocon2.png'
 
 const Jumbotron = () => {
   const [read, setRead] = useState(false);
@@ -18,7 +20,7 @@ const Jumbotron = () => {
         class="h-50 m-4 p-2"
         style={{
           borderRight: "1px solid var(--background-color)",
-          color: "var(--primary-color-hover)",
+          color: "var(--primary-color)",
         }}
       >
         <p>
@@ -55,9 +57,7 @@ const Jumbotron = () => {
             <div style={{backgroundColor: "white", height: "100%", width: "20%", position: "absolute", zIndex: "5", top: 0, left: 0}}>
             </div>
             <div style={{backgroundColor: "white", height: "60%", width: "35%", position: "absolute", zIndex: "10", top: "20%", left: "3%"}}>
-                <h1 className="fw-bold" style={{color: "var(--primary-color-hover)"}}>Your Home, </h1>
-                <h1 className="fw-bold" style={{color: "var(--primary-color-hover)", lineHeight: "1rem"}}>Your Haven.</h1>
-                <p className="fw-light" style={{color: "var(--primary-color)", padding:"10%", marginTop: "10%", fontSize: "larger"}}>In today's dynamic world, the importance of living in a modern house cannot be overstated. Modern homes epitomize efficiency, integrating energy-saving technologies and smart home features that not only streamline daily life but also reduce environmental impact. </p>
+                <img src={herocon1} alt="content-hero" style={{objectFit: "cover", height: "50%", margin: "25%"}}/>
             </div>
         </div>
     </div>
@@ -66,6 +66,7 @@ const Jumbotron = () => {
         <div style={{width: "100%", height: "100%"}}>
             <img src={hero2} alt="check-hero" style={{width: "100%", objectFit: "contain"}} />
             <div style={{backgroundColor: "white", height: "100%", width: "40%", position: "absolute", zIndex: "5", top: 0, right: 0}}>
+            <img src={herocon2} alt="content-hero" style={{objectFit: "cover", margin: "80% 10% 10% 10%", height: "30%"}}/>
             </div>
         </div>
     </div> 

@@ -11,8 +11,8 @@ const Stratergy = () => {
         className="container-fluid mt-5 text-center"
         style={{
           color: "var(--background-color)",
-          backgroundImage:
-            "linear-gradient(98deg, rgba(43,35,24,1) 3%, rgba(79,68,50,1) 54%, rgba(169,156,112,1) 100%)",
+          backgroundColor:
+          "var(--background-color)",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           borderTop: "2px solid var(--primary-color-hover)",

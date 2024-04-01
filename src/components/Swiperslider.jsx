@@ -42,7 +42,7 @@ export default function SwiperSlider() {
     <>
     <div
         class="h-50 m-4 p-2"
-        style={{ borderLeft: "1px solid var(--background-color)",  color: "var(--primary-color-hover)" }}
+        style={{ borderLeft: "1px solid var(--background-color)",  color: "var(--primary-color)" }}
       >
         <p>
           At Tron's constructions, our primary focus is on crafting exceptional
