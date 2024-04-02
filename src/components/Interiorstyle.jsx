@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from 'react'
 import Interiormatch from './Interiormatch'
-import { sectionStore } from '../App'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { sectionStore } from '../store/Tronsstore'
 
 
 const Interiorstyle = () => {

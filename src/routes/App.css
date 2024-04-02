@@ -1,0 +1,162 @@
+
+.navigateLink {
+  color: white;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+.ln {
+  margin-top: 10px;
+}
+
+.navigateLink:hover {
+  color: var(--primary-color);
+}
+
+
+/* .insideH1:hover {
+  font-weight: lighter;
+} */
+
+.imghov {
+  width: 100%;
+  transition: 0.6s ease;
+  transform: scale(1);
+}
+
+.imghov:hover {
+  padding: 10px;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.atag {
+  color: black;
+  transition: 0.5s ease;
+  transform: scale(1);
+}
+
+.atag:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+ .swiper {
+  width: 98%;
+  height: 300px;
+  margin: 20px 0 20px 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiperImageScale {
+  position: absolute;
+  z-index: -10;
+  transition: 0.5s ease;
+}
+
+
+.swiperImageScale:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 100%;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+
+.swiper-button-next:hover {
+  background-color:   var(--primary-color-hover);    
+}
+.swiper-button-prev:hover {
+  background-color:   var(--primary-color-hover);
+} 
+
+
+.sp {
+  color: white;
+  text-decoration: underline;
+}
+
+.sp:hover {
+  color: var(--baclground-color);
+  cursor: pointer;
+}
+
+.videoDimensions {
+  height: 100vh;
+  box-shadow: 5px 5px 0.6rem var(--background-color);
+  margin: 1%;
+}
+
+
+
+.interiorBtn {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px;
+  color: var(--background-color);
+}
+
+.interiorBtn:hover {
+  background-color: var(--primary-color-hover);
+}
+
+
+.interiorBtnModal {
+  background-color: var(--primary-color);
+  border: none;
+  width: 100px;
+  color: var(--background-color);
+}
+
+.interiorBtnModal:hover {
+  background-color: var(--primary-color-hover);
+}
+
+
+.card {
+  border: none !important;
+}
+
+
+@media (min-width: 1024px) {
+  .videoDimensions {
+    height: 75vh;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .videoDimensions {
+    height: 50vh;
+  }
+}
+
+
+
+@media (max-width: 425px) {
+  .videoDimensions {
+    height: 25vh;
+  }
+}

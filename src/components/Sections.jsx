@@ -1,16 +1,19 @@
 import React, { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { sectionStore } from '../App'
 import Footer from './Footer'
 import Thumbsgallery from './Thumbsgallery'
 import Designprocess from './Designprocess'
 import logo from '../assets/logotc.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { sectionStore } from '../store/Tronsstore'
+
 
 const Sections = () => {
 
     const {secList} = useContext(sectionStore);
+    const navigate = useNavigate();
+
 
     useEffect(() => {
       setTimeout(() => {
@@ -20,9 +23,16 @@ const Sections = () => {
           behavior: "smooth"
         });
       }, 100)
+
+      window.onbeforeunload = () => { return "" };
+        
+    // Unmount the window.onbeforeunload event
+    return () => { window.onbeforeunload = null };
+      
     }, ["/sections"]);
+
+
     
-    const navigate = useNavigate();
   return (
     <div >
         <nav className="navbar navbar-expand-md  sticky-top" data-bs-theme="dark" style={{backgroundColor: "var(--background-color)", border: "3px solid var(--primary-color)"}}>

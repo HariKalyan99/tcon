@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import Jumbotron from "./Jumbotron";
 import Stratergy from "./Stratergy";
 import SwiperSlider from "./Swiperslider";
@@ -25,8 +25,8 @@ const Dashboard = () => {
     <div className="dashboard" id="aboutus">
       <Header />
       <main className="videoDimensions" >
-      <div className="position-relative overflow-hidden text-center bg-body-light h-100" >
-        <img src={gif} alt="background" style={{ width: "100%",  position: "absolute", top: 0, left: 0, zIndex: "10", opacity: "0.7"}}/>
+      <div className="position-relative overflow-hidden text-center bg-body-light h-100" style={{backgroundColor: "rgba(0, 0, 0, 1)"}}>
+        <img src={gif} alt="background" style={{ width: "100%", height: "100%", position: "absolute", top: 0, left: 0, zIndex: "10", opacity: "0.3"}}/>
         <div className="col-md-6 p-lg-5 mx-auto mt-5" style={{position: "relative", zIndex: "100"}}>
           <h1 className="display-3 fw-bold "
             style={{ color: "var(--primary-color)" }}

@@ -6,14 +6,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import "../App.css";
+import "../routes/App.css";
 
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
-import { sectionStore } from "../App";
+import { sectionStore } from "../store/Tronsstore";
 
 export default function SwiperSlider() {
   

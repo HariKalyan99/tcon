@@ -62,3 +62,26 @@
 .ant-modal-close-x {
   color: white !important;
 }
+
+
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); 
+  border-radius: 10px;
+  height: 200px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background-color); 
+}

@@ -26,7 +26,7 @@ const Projectcount = () => {
             )}
             +
           </h1>
-            <p style={{color: "var(--primary-color)", textAlign: "center"}}>Projects Completed</p>
+            <p className="fw-bold" style={{color: "var(--primary-color-hover)", textAlign: "center"}}>Projects Completed</p>
             </div>
             <div className="d-flex flex-wrap w-50 h-50 text-light flex-column justify-content-center align-items-center" >
             <FaPeopleRoof size={100} style={{color: "var(--primary-color-hover)"}}/>
@@ -37,7 +37,7 @@ const Projectcount = () => {
             )}
             +
           </h1>
-            <p style={{color: "var(--primary-color)", textAlign: "center"}}>Clients Served</p>
+            <p className="fw-bold" style={{color: "var(--primary-color-hover)", textAlign: "center"}}>Clients Served</p>
             </div>
             <div className="d-flex flex-wrap w-50 h-50 text-light flex-column justify-content-center align-items-center" >
             <GrUserWorker size={100} style={{color: "var(--primary-color-hover)"}}/>
@@ -46,7 +46,7 @@ const Projectcount = () => {
             {counterOn && <CountUp start={0} end={40} duration={2} delay={0} />}
             +
           </h1>
-            <p style={{color: "var(--primary-color)", textAlign: "center"}}>Employees</p>
+            <p className="fw-bold" style={{color: "var(--primary-color-hover)", textAlign: "center"}}>Employees</p>
             </div>
             <div className="d-flex flex-wrap w-50 h-50 text-light flex-column justify-content-center align-items-center" >
             <GiClockwork size={100} style={{color: "var(--primary-color-hover)"}}/>
@@ -54,7 +54,7 @@ const Projectcount = () => {
             {" "}
             {counterOn && <CountUp start={0} end={3} duration={2} delay={0} />}+
           </h1>
-            <p style={{color: "var(--primary-color)", textAlign: "center"}}>Years of Experience</p>
+            <p className="fw-bold" style={{color: "var(--primary-color-hover)", textAlign: "center"}}>Years of Experience</p>
             </div>
         </div>
     </ScrollTrigger>
