@@ -60,7 +60,7 @@ const Sections = () => {
             </h1>
           </div>
       </div>
-      <h1 className='text-center m-5'>{section.section} Palette</h1>
+      <h1 className='text-center m-5'>{section.section}</h1>
     </div>)}
       
       <div className='container '  data-aos="fade-zoom-in"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true'>

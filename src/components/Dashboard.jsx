@@ -7,6 +7,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Interiorstyle from "./Interiorstyle";
 import Checkpointhero from "./Checkpointhero";
+import Workgallery from "./Workgallery";
 
 
 const Dashboard = () => {
@@ -43,6 +44,7 @@ const Dashboard = () => {
     <Checkpointhero />
     <Stratergy />
     <Interiorstyle />
+    <Workgallery />
     <Footer />
     </div>
   );

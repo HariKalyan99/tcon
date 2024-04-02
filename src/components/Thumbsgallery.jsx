@@ -37,8 +37,8 @@ export default function Thumbsgallery({images}) {
         className="mySwiper21"
       >
         {imgList.map((img, ind) =>  <SwiperSlide key={ind}>
-      <h1 className='position-absolute text-light bottom-0 mb-5 w-100 text-center'>{img.heading}</h1>
-          <img src={img.img} alt={img.heading} />
+      <h1 className='position-absolute text-light bottom-0 mb-5 w-100 text-center'>{img.heading || ""}</h1>
+          <img src={img.img} alt={img.heading || ""} />
         </SwiperSlide>)}
       </Swiper>
       <Swiper
@@ -52,7 +52,7 @@ export default function Thumbsgallery({images}) {
         style={{height: "100px"}}
       >
         {imgList.map((img, ind) =>  <SwiperSlide key={ind}>
-          <img src={img.img} alt={img.heading}/>
+          <img src={img.img} alt={img.heading || "gallery"}/>
         </SwiperSlide>)}
       </Swiper>
 

@@ -55,19 +55,19 @@ const Jumbotron = () => {
       <hr />
       </div>
       <div className='d-flex justify-content-center mt-5 mb-5' data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' style={{height: "100%"}}>
-        <div style={{width: "100%", height: "100%"}}>
-            <img src={hero1} alt="check-hero" style={{width: "100%", objectFit: "contain"}} />
+        <div style={{width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
+            <img src={hero1} alt="check-hero" style={{width: "100%", objectFit: "contain",position: "relative", zIndex: "-1"}} />
             <div style={{backgroundColor: "white", height: "100%", width: "20%", position: "absolute", zIndex: "5", top: 0, left: 0}}>
             </div>
-            <div style={{backgroundColor: "white", height: "60%", width: "35%", position: "absolute", zIndex: "10", top: "20%", left: "3%"}}>
+            <div style={{backgroundColor: "white", height: "60%", width: "35%", position: "absolute", zIndex: "10", top: "20%", left: "3%", }}>
                 <img src={herocon1} alt="content-hero" style={{objectFit: "cover", height: "50%", margin: "25%"}}/>
             </div>
         </div>
     </div>
    
     <div className='d-flex justify-content-center mt-5 mb-5' data-aos="fade-left"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' style={{height: "100%"}}>
-        <div style={{width: "100%", height: "100%"}}>
-            <img src={hero2} alt="check-hero" style={{width: "100%", objectFit: "contain"}} />
+        <div style={{width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
+            <img src={hero2} alt="check-hero" style={{width: "100%", objectFit: "contain",position: "relative", zIndex: "-1"}} />
             <div style={{backgroundColor: "white", height: "100%", width: "40%", position: "absolute", zIndex: "5", top: 0, right: 0}}>
             <img src={herocon2} alt="content-hero" style={{objectFit: "cover", margin: "80% 10% 10% 10%", height: "30%"}}/>
             </div>

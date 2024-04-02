@@ -37,3 +37,21 @@
 .ant-drawer-header {
   display: none !important;
 }
+
+.ant-modal-content {
+  background-color:#a99c70 !important;
+}
+
+.ant-modal-header {
+  background-color: #a99c70 !important;
+
+}
+
+.ant-modal-title {
+  color:#2b2318 !important;
+  width: auto;
+}
+
+.ant-modal-close-x {
+  color: white !important;
+}
