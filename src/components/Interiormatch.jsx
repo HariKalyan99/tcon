@@ -21,7 +21,7 @@ const Interiormatch = ({interior}) => {
       <div
         className='position-absolute bottom-0 d-flex justify-content-center align-items-center w-100 mb-5'
       >
-        <button onClick={showDrawer} className='interiorBtn' style={{boxShadow: "10px 5px 0.6rem black"}} data-aos="fade-zoom-in">
+        <button onClick={showDrawer} className='interiorBtn' style={{boxShadow: "10px 5px 0.6rem black"}}>
           Interior palatte 
         </button>
       </div>

@@ -76,8 +76,6 @@ const Stratergy = () => {
                 with your team to ensure that your vision is being realized
                 effectively and efficiently.</p>
               </Stratergymodal>
-
-
             </div>
           </div>
           <div className="col d-flex align-items-start">
@@ -95,7 +93,7 @@ const Stratergy = () => {
             </div>
             <div>
               <h3
-                className="fs-4 text-body-emphasis text-center"
+                className="fs-4 text-body-emphasis"
                 style={{ color: "var(--background-color)" }}
               >
                 Assessment and Goal Setting

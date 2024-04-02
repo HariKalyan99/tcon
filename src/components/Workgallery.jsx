@@ -2,14 +2,18 @@ import { Tooltip } from 'antd'
 import React from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Projectcount from './Projectcount'
 const Workgallery = () => {
   return (
    <div className='h-100 w-100 position-relative' style={{backgroundColor: "var(--background-color)"}}>
-    <div className='d-flex justify-content-center mt-5 mb-5' data-aos="fade-left"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' style={{height: "100%"}}>
+    <div className='d-flex justify-content-center flex-column align-items-center mt-5 mb-5' data-aos="fade-left"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' style={{height: "100%"}}>
         <div style={{width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.5)"}}>
             <img src="https://zocohome.com/cdn/shop/files/zoco-home-design-book-arranging-things-51810130002263.jpg?v=1689949148&width=1800" alt="check-hero" style={{width: "100%", objectFit: "contain", position: "relative", zIndex: "-1"}} />
         </div>
     </div> 
+    <div className="container w-100 h-100">
+              <Projectcount />
+            </div>
     <h1 className='text-center text-light' style={{textDecoration: "underline"}}>Photos Gallery</h1>
     <div class="album py-5">
     <div class="container" data-aos="fade-zoom-in"  data-aos-easing="ease-in-sine" data-aos-duration="200">

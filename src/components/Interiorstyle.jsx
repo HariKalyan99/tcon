@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'
 const Interiorstyle = () => {
     useEffect(() => {
         AOS.init({
-            duration: 600,
+            duration: 300,
             easing: 'ease-in-sine',
             delay: 100,
           });
