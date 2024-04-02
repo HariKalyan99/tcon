@@ -28,12 +28,12 @@ const Dashboard = () => {
       <div className="position-relative overflow-hidden text-center bg-body-light h-100" style={{backgroundColor: "rgba(0, 0, 0, 1)"}}>
         <img src={gif} alt="background" style={{ width: "100%", height: "100%", position: "absolute", top: 0, left: 0, zIndex: "10", opacity: "0.3"}}/>
         <div className="col-md-6 p-lg-5 mx-auto mt-5" style={{position: "relative", zIndex: "100"}}>
-          <h1 className="display-3 fw-bold "
+          <h1 className="display-3 fw-lighter "
             style={{ color: "var(--primary-color)" }}
           >
             Building Dreams, One Brick at a Time 
           </h1>
-          <p className="fw-bold" style={{ color: "white", textDecoration: "underline"}}>
+          <p className="fw-light fst-italic" style={{ color: "white"}}>
             Crafting Homes, Creating Memories
           </p>
         </div>

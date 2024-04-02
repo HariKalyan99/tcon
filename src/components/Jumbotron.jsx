@@ -17,10 +17,9 @@ const Jumbotron = () => {
   return (
     <>
       <div
-        className="h-50 mt-5 container p-2 text-center"
+        className="h-50 mt-2 container p-2 text-center"
         style={{
-          borderRight: "1px solid var(--background-color)",
-          borderLeft: "1px solid var(--background-color)",
+
           color: "var(--primary-color)",
         }}
       >
@@ -53,7 +52,7 @@ const Jumbotron = () => {
         </p>
       <hr />
       </div>
-      <div className='d-flex justify-content-center mt-5 mb-5' data-aos="fade-down"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' style={{height: "100%"}}>
+      <div className='d-flex justify-content-center mt-2 mb-5' data-aos="zoom-in-up"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' style={{height: "100%"}}>
         <div style={{width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
             <img src={hero1} alt="check-hero" style={{width: "100%", objectFit: "contain",position: "relative", zIndex: "-1"}} />
             <div style={{backgroundColor: "white", height: "100%", width: "20%", position: "absolute", zIndex: "5", top: 0, left: 0}}>
@@ -64,7 +63,7 @@ const Jumbotron = () => {
         </div>
     </div>
    
-    <div className='d-flex justify-content-center mt-5 mb-5' data-aos="fade-down"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' style={{height: "100%"}}>
+    <div className='d-flex justify-content-center mt-5 mb-5' data-aos="zoom-in-up"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' style={{height: "100%"}}>
         <div style={{width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
             <img src={hero2} alt="check-hero" style={{width: "100%", objectFit: "contain",position: "relative", zIndex: "-1"}} />
             <div style={{backgroundColor: "white", height: "100%", width: "40%", position: "absolute", zIndex: "5", top: 0, right: 0}}>
