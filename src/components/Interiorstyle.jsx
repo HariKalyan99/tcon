@@ -21,8 +21,8 @@ const Interiorstyle = () => {
         <div className="album pb-5">
     <div className="container">
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
-        {interiorList.map((interior, ind) => <div key={ind} className="col" data-aos='fade-up'>
-          <div className="card shadow border-0">
+        {interiorList.map((interior, ind) => <div key={ind} className="col" >
+          <div className="card shadow border-0" data-aos='fade-up'>
               <Interiormatch interior={interior}/>
           </div>
         </div>)}

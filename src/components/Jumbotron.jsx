@@ -18,7 +18,7 @@ const Jumbotron = () => {
     <>
     <hr />
       <div
-        class="h-50 mt-5 container p-2 text-center"
+        className="h-50 mt-5 container p-2 text-center"
         style={{
           borderRight: "1px solid var(--background-color)",
           borderLeft: "1px solid var(--background-color)",
@@ -60,7 +60,7 @@ const Jumbotron = () => {
             <div style={{backgroundColor: "white", height: "100%", width: "20%", position: "absolute", zIndex: "5", top: 0, left: 0}}>
             </div>
             <div style={{backgroundColor: "white", height: "60%", width: "35%", position: "absolute", zIndex: "10", top: "20%", left: "3%", }}>
-                <img src={herocon1} alt="content-hero" style={{objectFit: "cover", height: "50%", margin: "25%"}}/>
+                <img src={herocon1} alt="content-hero" style={{objectFit: "cover", height: "60%", margin: "20%"}}/>
             </div>
         </div>
     </div>

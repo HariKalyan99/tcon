@@ -24,25 +24,25 @@ const Sections = () => {
     
     const navigate = useNavigate();
   return (
-    <div>
-        <nav class="navbar navbar-expand-md  sticky-top" data-bs-theme="dark" style={{backgroundColor: "var(--background-color)", border: "3px solid var(--primary-color)"}}>
-  <div class="container-fluid ">
-    <a class="navbar-brand d-flex justify-content-start px-2" href="#">
+    <div >
+        <nav className="navbar navbar-expand-md  sticky-top" data-bs-theme="dark" style={{backgroundColor: "var(--background-color)", border: "3px solid var(--primary-color)"}}>
+  <div className="container-fluid ">
+    <a className="navbar-brand d-flex justify-content-start px-2" href="#">
       <img src={logo} alt="logo" style={{height: "45px"}}/>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation" style={{backgroundColor: "transparent", border: "none"}}>
-      <span class="navbar-toggler-icon"></span>
+    <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation" style={{backgroundColor: "transparent", border: "none"}}>
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="offcanvas offcanvas-end w-75" tabIndex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLabel" style={{color: "var(--primary-color)"}}>Tron's Contructions</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div className="offcanvas offcanvas-end w-75" tabIndex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" >
+      <div className="offcanvas-header">
+        <h5 className="offcanvas-title" id="offcanvasLabel" style={{color: "var(--primary-color)"}}>Tron's Contructions</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav flex-grow-1 justify-content-end">
-        <li className="nav-item ln  px-4"><a className=" navigateLink" href="#" ><span className='insideH1'>Section</span></a></li>
-        <li className="nav-item ln  px-4"><a className=" navigateLink" href="#aboutus" ><span className='insideH1'>Gallery</span></a></li>
-        <li className="nav-item ln  px-4"><a className=" navigateLink" href="#" ><span className='insideH1'>Features</span></a></li>
+      <div className="offcanvas-body">
+        <ul className="navbar-nav flex-grow-1 justify-content-end">
+        <li className="nav-item ln  px-4"><a className=" navigateLink" href="#section" ><span className='insideH1'>Section</span></a></li>
+        <li className="nav-item ln  px-4"><a className=" navigateLink" href="#gallery" ><span className='insideH1'>Gallery</span></a></li>
+        <li className="nav-item ln  px-4"><a className=" navigateLink" href="#features" ><span className='insideH1'>Features</span></a></li>
         </ul>
       </div>
     </div>
@@ -50,7 +50,7 @@ const Sections = () => {
 </nav>
     <main>
     {secList.map((section, ind) => <div key={ind} className="mb-5" >
-      <div className='d-flex flex-column justify-content-center position-relative ' >
+      <div className='d-flex flex-column justify-content-center position-relative ' id='section'>
       
         <img src={section.hero} alt="hero" style={{height: '300px',  opacity: "0.7", objectFit: "cover"}} />
         
@@ -63,10 +63,10 @@ const Sections = () => {
       <h1 className='text-center m-5'>{section.section}</h1>
     </div>)}
       
-      <div className='container '  data-aos="fade-zoom-in"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true'>
+      <div className='container '  data-aos="fade-zoom-in"  data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-once='true' id='gallery'>
       {secList.map((sec, ind) => <Thumbsgallery key={ind} images={sec.images}/>)}
       </div>
-  <div className="container py-4">
+  <div className="container py-4" id='features'>
 
     
     {secList.map((abt, ind) => <Designprocess key={ind} abt={abt}/>)}

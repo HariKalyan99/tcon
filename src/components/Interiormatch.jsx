@@ -10,7 +10,7 @@ const Interiormatch = ({interior}) => {
   };
   const containerStyle = {
     position: 'relative',
-    height: 400,
+    height: 375,
     overflow: 'hidden',
     borderRadius: "0px",
     boxShadow: "5px 5px 0.6rem black",

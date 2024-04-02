@@ -43,7 +43,7 @@
 
  .swiper {
   width: 98%;
-  height: 400px;
+  height: 300px;
   margin: 20px 0 20px 0;
 }
 
@@ -104,8 +104,8 @@
 
 .videoDimensions {
   height: 100vh;
-  border: 2px solid var(--background-color);
   box-shadow: 5px 5px 0.6rem var(--background-color);
+  margin: 1%;
 }
 
 

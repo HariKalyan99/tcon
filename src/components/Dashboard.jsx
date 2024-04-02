@@ -22,7 +22,7 @@ const Dashboard = () => {
   }, ["/"]);
 
   return (
-    <div className="dashboard" id="dashboard">
+    <div className="dashboard" id="aboutus">
       <Header />
       <main className="videoDimensions" >
       <div className="position-relative overflow-hidden text-center bg-body-light h-100" >

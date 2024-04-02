@@ -5,27 +5,27 @@ import logo from '../assets/logotc.png'
 //#a99c70 hover
 const Header = () => {
   return (
-    <nav class="navbar navbar-expand-md  sticky-top" data-bs-theme="dark" style={{backgroundColor: "var(--background-color)", border: "3px solid var(--primary-color)"}}>
-  <div class="container-fluid ">
-    <a class="navbar-brand d-flex justify-content-start px-2" href="#">
+    <nav className="navbar navbar-expand-md  sticky-top" data-bs-theme="dark" style={{backgroundColor: "var(--background-color)", border: "3px solid var(--primary-color)"}}>
+  <div className="container-fluid ">
+    <a className="navbar-brand d-flex justify-content-start px-2" href="#aboutus">
       <img src={logo} alt="logo" style={{height: "45px"}}/>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation" style={{backgroundColor: "transparent", border: "none"}}>
-      <span class="navbar-toggler-icon"></span>
+    <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation" style={{backgroundColor: "transparent", border: "none"}}>
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="offcanvas offcanvas-end w-75" tabIndex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLabel" style={{color: "var(--primary-color)"}}>Tron's Contructions</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div className="offcanvas offcanvas-end w-75" tabIndex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" >
+      <div className="offcanvas-header">
+        <h5 className="offcanvas-title" id="offcanvasLabel" style={{color: "var(--primary-color)"}}>Tron's Contructions</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav flex-grow-1 justify-content-end">
-        <li class="nav-item ln  px-4"><a class=" navigateLink" href="#aboutus" ><span className='insideH1'>About us</span></a></li>
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Product</span></a></li>
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Features</span></a></li>
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Enterprise</span></a></li>
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Support</span></a></li>
-          <li class="nav-item ln  px-4"><a class=" navigateLink" href="#" ><span className='insideH1'>Pricing</span></a></li>
+      <div className="offcanvas-body">
+        <ul className="navbar-nav flex-grow-1 justify-content-end">
+        <li className="nav-item ln  px-4"><a className=" navigateLink" href="#aboutus" ><span className='insideH1'>About us</span></a></li>
+          <li className="nav-item ln  px-4"><a className=" navigateLink" href="#product" ><span className='insideH1'>Product</span></a></li>
+          <li className="nav-item ln  px-4"><a className=" navigateLink" href="#features" ><span className='insideH1'>Features</span></a></li>
+          <li className="nav-item ln  px-4"><a className=" navigateLink" href="#projects" ><span className='insideH1'>Projects</span></a></li>
+          <li className="nav-item ln  px-4"><a className=" navigateLink" href="#support" ><span className='insideH1'>Support</span></a></li>
+          <li className="nav-item ln  px-4"><a className=" navigateLink" href="#contact" ><span className='insideH1'>Contact us</span></a></li>
         </ul>
       </div>
     </div>

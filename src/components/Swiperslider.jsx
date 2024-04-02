@@ -43,8 +43,9 @@ export default function SwiperSlider() {
     <>
     <hr />
     <div
-        class="h-50 container text-center"
+        className="h-50 container text-center"
         style={{ borderLeft: "1px solid var(--background-color)",borderRight: "1px solid var(--background-color)",  color: "var(--primary-color)" }}
+        id="product"
       >
         <p>
           At Tron's constructions, our primary focus is on crafting exceptional
