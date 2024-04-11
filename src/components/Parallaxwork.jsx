@@ -16,7 +16,7 @@ import { MdOutlineEmail } from "react-icons/md";
 export default function Parallaxwork({ texts, screenHeight }) {
   if (screenHeight === "swiperSection") {
     return (
-      <div>
+      <div >
         <Swiper
           style={{
             "--swiper-pagination-color": "#fff",
@@ -56,7 +56,7 @@ export default function Parallaxwork({ texts, screenHeight }) {
     );
   } else if (screenHeight === "dashboard") {
     return (
-      <div>
+      <div id="contact">
         <Swiper
           style={{
             "--swiper-pagination-color": "#fff",
