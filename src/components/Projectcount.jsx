@@ -43,7 +43,7 @@ const Projectcount = () => {
             <GrUserWorker size={100} style={{color: "var(--primary-color-hover)"}}/>
             <h1 className="fs-2 text-center" style={{color: "var(--primary-color)"}}>
             {" "}
-            {counterOn && <CountUp start={0} end={40} duration={2} delay={0} />}
+            {counterOn && <CountUp start={0} end={200} duration={2} delay={0} />}
             +
           </h1>
             <p className="fw-bold" style={{color: "var(--primary-color-hover)", textAlign: "center"}}>Employees</p>

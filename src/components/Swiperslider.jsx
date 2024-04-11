@@ -13,6 +13,7 @@ import "../routes/App.css";
 import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { sectionStore } from "../store/Tronsstore";
+import Parallaxwork from "./Parallaxwork";
 
 export default function SwiperSlider() {
   
@@ -38,31 +39,19 @@ export default function SwiperSlider() {
   {image: "https://www.decorilla.com/online-decorating/wp-content/uploads/2023/08/Master-bedroom-inspiration-for-a-luxurious-interior-design.jpg", heading: "Bedrooms"},
  ]
 
+
+
+ const texts = [
+  {text: "At Tron's constructions, our primary focus is on crafting exceptionalinteriors and exteriors that redefine modern living. With a passion for design innovation and meticulous attention to detail, we specialize in creating captivating spaces that seamlessly blend style, functionality, and comfort. "},
+  {text: "From thoughtfully curated interiors that reflect your personality and lifestyle to striking exteriors that make a statement, we are committed to and design excellence delivering unparalleled craftsmanship"},
+  {text: "Whether it's transforming a single room or an entire property, trust us to bring your vision to life with creativity, precision, and expertise. of interior and exterior design with Tron's constructions. Experience the perfect harmony"}
+ ]
+
   return (
     <>
     <hr />
-    <div
-        className="h-50 container text-center"
-        style={{ borderLeft: "1px solid var(--background-color)",borderRight: "1px solid var(--background-color)",  color: "var(--primary-color)" }}
-        id="product"
-      >
-        <p>
-          At Tron's constructions, our primary focus is on crafting exceptional
-          interiors and exteriors that redefine modern living. With a passion
-          for design innovation and meticulous attention to detail, {!read && <span className="sp" onClick={() => handleRead()}> Read more...</span>}
-          {read && <span onClick={() => handleRead()}>we
-          specialize in creating captivating spaces that seamlessly blend style,
-          functionality, and comfort. From thoughtfully curated interiors that
-          reflect your personality and lifestyle to striking exteriors that make
-          a statement, we are committed to delivering unparalleled craftsmanship
-          and design excellence. Whether it's transforming a single room or an
-          entire property, trust us to bring your vision to life with
-          creativity, precision, and expertise. Experience the perfect harmony
-          of interior and exterior design with Tron's constructions. </span>}
-          {read && <span className="sp" onClick={() => handleRead()}> close</span>}
-        </p>
-      </div>
-      <hr />
+    <Parallaxwork texts={texts} screenHeight={"swiperSection"}/>
+    <hr />
       <h1 className="text-center text-light" style={{textDecoration: "underline"}}>Constructing Creativity</h1>
       <Swiper
         slidesPerView={1}
@@ -90,6 +79,7 @@ export default function SwiperSlider() {
         }}
         modules={[Pagination, Navigation]}
         className="mySwiper"
+        
       >
 
   

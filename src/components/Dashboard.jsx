@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Interiorstyle from "./Interiorstyle";
 import Checkpointhero from "./Checkpointhero";
 import Workgallery from "./Workgallery";
+import Parallaxwork from "./Parallaxwork";
 
 
 const Dashboard = () => {
@@ -21,6 +22,12 @@ const Dashboard = () => {
     }, 100)
   }, ["/"]);
 
+
+  const texts = [
+    {text: "At Tron's constructions, our primary focus is on crafting exceptionalinteriors and exteriors that redefine modern living. With a passion for design innovation and meticulous attention to detail, we specialize in creating captivating spaces that seamlessly blend style, functionality, and comfort. "},
+    {text: "From thoughtfully curated interiors that reflect your personality and lifestyle to striking exteriors that make a statement, we are committed to and design excellence delivering unparalleled craftsmanship"},
+    {text: "Whether it's transforming a single room or an entire property, trust us to bring your vision to life with creativity, precision, and expertise. of interior and exterior design with Tron's constructions. Experience the perfect harmony"}
+   ]
   return (
     <div className="dashboard" id="aboutus">
       <Header />
@@ -45,6 +52,7 @@ const Dashboard = () => {
     <Stratergy />
     <Interiorstyle />
     <Workgallery />
+    <Parallaxwork texts={texts} screenHeight={"dashboard"}/>
     <Footer />
     </div>
   );

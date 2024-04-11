@@ -22,7 +22,7 @@ const Workgallery = () => {
     <div className="album py-5">
     <div className="container" data-aos="fade-zoom-in"  data-aos-easing="ease-in-sine" data-aos-duration="100">
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5" >
-          {[1,2,3,4,5,6,7,8,9,0,11,23,34,45,221,29,45,67,89,98,76,55,43,22].map((photo, ind) => <Tooltip key={ind}>
+          {[1,2,3,4,5,6,7,8,9].map((photo, ind) => <Tooltip key={ind}>
         <div className="col" >
             <div  style={{boxShadow: '10px 10px .8rem var(--background-color)'}}>
           <div className="card shadow " >

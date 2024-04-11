@@ -1,0 +1,57 @@
+.swiperParallax {
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+  
+  .swiper-slideParallax {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+    background: none;
+    text-align: left !important;
+  }
+  
+  .parallax-bgParallax {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .swiper-slideParallax .titleParallax {
+    font-size: 41px;
+    font-weight: 300;
+  }
+  
+  .swiper-slideParallax .subtitleParallax {
+    font-size: 21px;
+  }
+  
+  .swiper-slideParallax .textParallax {
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+    line-height: 1.3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+  }
+  
+  .swiper-slideParallax .phoneParallax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+
