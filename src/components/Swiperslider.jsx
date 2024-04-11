@@ -14,6 +14,14 @@ import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { sectionStore } from "../store/Tronsstore";
 import Parallaxwork from "./Parallaxwork";
+import swiper1 from '../assets/simg1.jpeg'
+import swiper2 from '../assets/simg2.jpg'
+import swiper3 from '../assets/simg3.jpg'
+import swiper4 from '../assets/simg4.jpg'
+import swiper5 from '../assets/simg5.jpg'
+import swiper6 from '../assets/simg6.webp'
+import swiper7 from '../assets/simg7.jpg'
+
 
 export default function SwiperSlider() {
   
@@ -25,18 +33,18 @@ export default function SwiperSlider() {
 
   const {handleSection} = useContext(sectionStore)
 
-  const swiperList = [{image: "https://www.realestate.com.au/news-image/w_1280,h_720/v1659868366/news-lifestyle-content-assets/wp-content/production/capi_fe9d4c09db29e7d81b0b40086c49fd3f_bf5b61cdb7c816dbb0878e3bc0f8445a.jpeg?_i=AA", heading: "Landscapes"},
-  {image: "https://fancyhouse-design.com/wp-content/uploads/2023/11/The-L-shaped-sofa-positioned-atop-travertine-floors-anchors-the-living-room-in-contemporary-comfort..jpg", heading: "Hallways"},
+  const swiperList = [{image: swiper1, heading: "Landscapes"},
+  {image: swiper2, heading: "Hallways"},
 
-  {image: "https://www.interiorstudio.in/assets/images/blog/KITCHEN__PUJA.jpg", heading: "Kitchens"},
+  {image: swiper3, heading: "Kitchens"},
 
-  {image: "https://i.pinimg.com/736x/92/fc/a8/92fca821483fe0f384e8becf1ef40640.jpg", heading: "Bathrooms"},
+  {image: swiper4, heading: "Bathrooms"},
   
-  {image: "https://t3.ftcdn.net/jpg/05/92/84/02/360_F_592840219_Tvg2Ok1tb04uUmOqy7j2tfMruSFXXsus.jpg", heading: "Closets"},
+  {image: swiper5, heading: "Closets"},
 
-  {image: "https://static.dezeen.com/uploads/2019/02/residence-xiao-apartment-taipei-taiwan-interiors-kc-design-studio_dezeen_1704_col_21.jpg", heading: "Home Storages"},
+  {image: swiper6, heading: "Home Storages"},
 
-  {image: "https://www.decorilla.com/online-decorating/wp-content/uploads/2023/08/Master-bedroom-inspiration-for-a-luxurious-interior-design.jpg", heading: "Bedrooms"},
+  {image: swiper7, heading: "Bedrooms"},
  ]
 
 
