@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Footer from './Footer'
 import Thumbsgallery from './Thumbsgallery'
 import Designprocess from './Designprocess'
@@ -37,9 +37,9 @@ const Sections = () => {
     <div >
         <nav className="navbar navbar-expand-md  sticky-top" data-bs-theme="dark" style={{backgroundColor: "var(--background-color)", border: "3px solid var(--primary-color)"}}>
   <div className="container-fluid ">
-    <a className="navbar-brand d-flex justify-content-start px-2" href="#">
+    <Link className="navbar-brand d-flex justify-content-start px-2" to={"/"}>
       <img src={logo} alt="logo" style={{height: "45px"}}/>
-    </a>
+    </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation" style={{backgroundColor: "transparent", border: "none"}}>
       <span className="navbar-toggler-icon"></span>
     </button>

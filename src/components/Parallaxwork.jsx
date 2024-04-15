@@ -85,7 +85,7 @@ export default function Parallaxwork({ texts, screenHeight }) {
           ></div>
 
           <SwiperSlide className="swiper-slideParallax">
-          <h1 style={{ textAlign: "center", color: "var(--primary-color-hover)" }}>Building dreams, one project at a time. Connect with us to start yours!</h1>
+          <h1 style={{ textAlign: "center", color: "var(--primary-color-hover)" }}>Building dreams, one project at a time.</h1>
             <div className="phoneParallax" data-swiper-parallax="-100">
               <div
                 className="d-flex flex-wrap  text-light flex-column justify-content-center align-items-center"
@@ -116,14 +116,14 @@ export default function Parallaxwork({ texts, screenHeight }) {
                       marginTop: "10px",
                     }}
                   >
-                    Call us
+                    Call
                   </button>
                 </a>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="swiper-slideParallax">
-          <h1 style={{ textAlign: "center", color: "var(--primary-color-hover)" }}>Building dreams, one project at a time. Connect with us to start yours!</h1>
+          <h1 style={{ textAlign: "center", color: "var(--primary-color-hover)" }}>Connect with us to start yours!</h1>
             <div className="phoneParallax" data-swiper-parallax="-100">
               <div
                 className="d-flex flex-wrap  text-light flex-column justify-content-center align-items-center"
@@ -143,7 +143,7 @@ export default function Parallaxwork({ texts, screenHeight }) {
                   style={{ color: "var(--primary-color-hover)" }}
                 />
                 <h1 style={{ color: "var(--primary-color)" }}>
-                  @:
+                  Mail us @:
                 </h1>
                 <a href="mailto:makeartanhear8@gmail.com?cc=harikalyan91tron@gmail.com">
                   <button
@@ -154,7 +154,7 @@ export default function Parallaxwork({ texts, screenHeight }) {
                       marginTop: "10px",
                     }}
                   >
-                    Mail Us
+                    .com 
                   </button>
                 </a>
               </div>

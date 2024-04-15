@@ -3,15 +3,17 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Projectcount from "./Projectcount";
-import pic1 from '../assets/p1.jpg'
-import pic2 from '../assets/p2.jpg'
-import pic3 from '../assets/p3.jpg'
-import pic4 from '../assets/p4.jpg'
-import pic5 from '../assets/p5.jpg'
-import pic6 from '../assets/p6.jpg'
-import pic7 from '../assets/p7.jpg'
-import pic8 from '../assets/p8.jpg'
-import pic9 from '../assets/p9.jpg'
+import pic1 from "../assets/p1.jpg";
+import pic2 from "../assets/p2.jpg";
+import pic3 from "../assets/p3.jpg";
+import pic4 from "../assets/p4.jpg";
+import pic5 from "../assets/p5.jpg";
+import pic6 from "../assets/p6.jpg";
+import pic7 from "../assets/p7.jpg";
+import pic8 from "../assets/p8.jpg";
+import pic9 from "../assets/p9.jpg";
+import { Image } from "antd";
+import { Link } from "react-router-dom";
 
 const Workgallery = () => {
   const workPics = [
@@ -107,10 +109,13 @@ const Workgallery = () => {
                     }}
                   >
                     <div className="card shadow h-100 w-100">
-                      <img
+                      <Image
+                        style={{
+                          height: "300px",
+                          width: "100%",
+                          objectFit: "cover",
+                        }}
                         src={photo.photo}
-                        alt="gallery-imgs"
-                        style={{height: "300px", width: "100%", objectFit: "cover"}}
                       />
                     </div>
                   </div>
@@ -119,6 +124,13 @@ const Workgallery = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="d-flex justify-content-center m-5">
+      <Link to={"/worker-gallery"}>
+      <button className='interiorBtn' style={{boxShadow: "10px 5px 0.6rem black"}}>
+          Go to gallery
+        </button>
+      </Link>
       </div>
     </div>
   );

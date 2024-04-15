@@ -8,12 +8,14 @@ import {RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Dashboard from './components/Dashboard.jsx';
 import Sections from './components/Sections.jsx';
 import PageNotFound from './components/PageNotFound.jsx';
+import Ourworkers from './components/Ourworkers.jsx';
 
 const router = createBrowserRouter([
   {path: "/", element: <App />, children: [
     {path: "/", element: <Dashboard />},
     {path: "/sections", element: <Sections />},
-    {path: "*", element: <PageNotFound />},
+    {path: "worker-gallery", element: <Ourworkers />},
+    {path: "*", element: <PageNotFound />}
   ]}
 ])
 
