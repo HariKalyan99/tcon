@@ -23,7 +23,7 @@ const Dashboard = () => {
   }, ["/"]);
 
   const contactTexts = [
-    {text: "Thank you for your interest in reaching out to us. Whether you have questions, feedback, or inquiries, we're here to assist you. Please find below the various ways you can get in touch with us:", heading:' ContactUs:'},
+    {text: "Thank you for your interest in reaching out to us. Whether you have questions, feedback, or inquiries, we're here to assist you. Please swipe left, you can get in touch with us in various ways:", heading:' ContactUs:'},
     {text: "For general questions or information, please email us at contact@example.com, tap the button to get redirected to email below.", heading: 'General Inquires:'},
     {text: "If you require assistance with an existing order, product, or service, our dedicated customer support team is here to help. Please email us at support@example.com or call us at +91-9148911954 during our business hours.", heading: 'Customer Support:'},
     {text: "Looking to join our team? To view current job openings and learn more about working with us or for inquiries related to employment/recruitment, please email us at careers@example.com.", heading: 'Career Opportunities:'},
