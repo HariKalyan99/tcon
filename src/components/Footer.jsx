@@ -5,24 +5,26 @@ import { BsFacebook } from "react-icons/bs";
 import { BsPinterest } from "react-icons/bs";
 import { BsTwitterX } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="container-fluid py-5">
       <hr style={{color: "var(--primary-color)"}}/>
   <div className="row">
     <div className="col-12 col-md">
-    <a className="navbar-brand d-flex justify-content-start px-2" href="#">
-      <img src={logo} alt="logo" style={{height: "50px"}}/>
-    </a>
     </div>
+    <span className="navbar-brand d-flex justify-content-start px-2" to="/">
+      <img src={logo} alt="logo" style={{height: "50px"}}/>
+    </span>
      <div className="col-6 col-md">
-      <h5>2021, Tron's constructions©</h5>
-      <p>All rights reserved</p>
+      <br />
       <a href='https://www.instagram.com/' target='_blank' style={{color: "black"}}><PiInstagramLogoFill size={30}/></a>
     <a href='https://www.facebook.com/' target='_blank' style={{color: "black"}}><BsFacebook size={30}/></a>
     <a href='https://www.pinterest.com/' target='_blank' style={{color: "black"}}><BsPinterest size={30}/></a>
     <a href='https://www.twitter.com/' target='_blank' style={{color: "black"}}><BsTwitterX size={30}/></a>
     <a href='https://www.linkedin.com/' target='_blank' style={{color: "black"}}><AiFillLinkedin size={30}/></a>
+      <h5 style={{color: "var(--primary-color)", marginTop: "1%"}}>2021, Tron's constructions© <span style={{color: "var(--primary-color)"}} className='fs-5'>All rights reserved.</span></h5>
+      
     </div> 
    
 

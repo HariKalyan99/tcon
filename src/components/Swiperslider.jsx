@@ -87,7 +87,7 @@ export default function SwiperSlider() {
         }}
         modules={[Pagination, Navigation]}
         className="mySwiper"
-        
+        id="product"
       >
 
   

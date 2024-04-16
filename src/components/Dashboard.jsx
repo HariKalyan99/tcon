@@ -22,6 +22,15 @@ const Dashboard = () => {
     }, 100)
   }, ["/"]);
 
+  const contactTexts = [
+    {text: "Thank you for your interest in reaching out to us. Whether you have questions, feedback, or inquiries, we're here to assist you. Please find below the various ways you can get in touch with us:", heading:' ContactUs:'},
+    {text: "For general questions or information, please email us at contact@example.com, tap the button to get redirected to email below.", heading: 'General Inquires:'},
+    {text: "If you require assistance with an existing order, product, or service, our dedicated customer support team is here to help. Please email us at support@example.com or call us at +91-9148911954 during our business hours.", heading: 'Customer Support:'},
+    {text: "Looking to join our team? To view current job openings and learn more about working with us or for inquiries related to employment/recruitment, please email us at careers@example.com.", heading: 'Career Opportunities:'},
+    {text: "No. 1670/49 6th Main Cross, Kengeri stage 2, Kengeri Satellite Town Bengaluru - 560060", heading: 'Address:'},
+    {text: "Monday - Friday: 9:00 AM - 5:00 PM (IST)", heading: 'Business Hours:'}
+  ]
+
 
   const texts = [
     {text: "At Tron's constructions, our primary focus is on crafting exceptionalinteriors and exteriors that redefine modern living. With a passion for design innovation and meticulous attention to detail, we specialize in creating captivating spaces that seamlessly blend style, functionality, and comfort. "},
@@ -52,7 +61,7 @@ const Dashboard = () => {
     <Stratergy />
     <Interiorstyle />
     <Workgallery />
-    <Parallaxwork texts={texts} screenHeight={"dashboard"}/>
+    <Parallaxwork texts={texts} screenHeight={"dashboard"} contactTexts={contactTexts}/>
     <Footer />
     </div>
   );

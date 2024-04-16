@@ -49,6 +49,7 @@ const Workgallery = () => {
     <div
       className="container-fluid"
       style={{ borderBottom: "1px solid var(--primary-color-hover)" }}
+      
     >
       <div
         className="h-100 w-100 position-relative"
@@ -92,7 +93,7 @@ const Workgallery = () => {
       >
         Photos Gallery
       </h1>
-      <div className="album py-5">
+      <div className="album py-5" id="workgallery">
         <div
           className="container"
           data-aos="fade-zoom-in"
@@ -132,6 +133,7 @@ const Workgallery = () => {
         </button>
       </Link>
       </div>
+      <hr />
     </div>
   );
 };

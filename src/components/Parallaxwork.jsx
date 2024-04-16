@@ -13,7 +13,8 @@ import "./Parallaxwork.css";
 import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
-export default function Parallaxwork({ texts, screenHeight }) {
+import { MdLocationPin } from "react-icons/md";
+export default function Parallaxwork({ texts, screenHeight, contactTexts }) {
   if (screenHeight === "swiperSection") {
     return (
       <div >
@@ -46,12 +47,19 @@ export default function Parallaxwork({ texts, screenHeight }) {
           ></div>
           {texts.map((text, ind) => (
             <SwiperSlide key={ind} className="swiper-slideParallax">
+              
               <div className="textParallax" data-swiper-parallax="-100">
+                
                 <p>{text.text}</p>
               </div>
+              
             </SwiperSlide>
           ))}
+          <div>
+            
+            </div>  
         </Swiper>
+
       </div>
     );
   } else if (screenHeight === "dashboard") {
@@ -85,28 +93,9 @@ export default function Parallaxwork({ texts, screenHeight }) {
           ></div>
 
           <SwiperSlide className="swiper-slideParallax">
-          <h1 style={{ textAlign: "center", color: "var(--primary-color-hover)" }}>Building dreams, one project at a time.</h1>
-            <div className="phoneParallax" data-swiper-parallax="-100">
-              <div
-                className="d-flex flex-wrap  text-light flex-column justify-content-center align-items-center"
-                style={{
-                  backgroundColor: "var(--background-color)",
-                  boxShadow: "0px 0px 1rem black",
-                  display: "flex",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  minWidth: "300px",
-                  width: "50%",
-                  height: "50%",
-                }}
-              >
-                <MdOutlinePhoneAndroid
-                  size={200}
-                  style={{ color: "var(--primary-color-hover)" }}
-                />
-                <h1 style={{ color: "var(--primary-color)" }}>
-                  Ph: 9148911954
-                </h1>
+         <div className="textParallax" data-swiper-parallax="-100">
+         <div>
+         <p> <span className="fs-1">{contactTexts[0].heading} </span> <br />{contactTexts[0].text}</p>
                 <a href="tel:+919148911954">
                   <button
                     className="interiorBtnModal"
@@ -117,34 +106,17 @@ export default function Parallaxwork({ texts, screenHeight }) {
                     }}
                   >
                     Call
+                    <MdOutlinePhoneAndroid />
                   </button>
                 </a>
+         </div>
               </div>
-            </div>
+           
           </SwiperSlide>
           <SwiperSlide className="swiper-slideParallax">
-          <h1 style={{ textAlign: "center", color: "var(--primary-color-hover)" }}>Connect with us to start yours!</h1>
-            <div className="phoneParallax" data-swiper-parallax="-100">
-              <div
-                className="d-flex flex-wrap  text-light flex-column justify-content-center align-items-center"
-                style={{
-                  backgroundColor: "var(--background-color)",
-                  boxShadow: "0px 0px 3rem black",
-                  display: "flex",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  minWidth: "300px",
-                  width: "50%",
-                  height: "50%",
-                }}
-              >
-                <MdOutlineEmail
-                  size={200}
-                  style={{ color: "var(--primary-color-hover)" }}
-                />
-                <h1 style={{ color: "var(--primary-color)" }}>
-                  Mail us @:
-                </h1>
+             <div className="textParallax" data-swiper-parallax="-100">
+             <div>
+             <p> <span className="fs-1">{contactTexts[1].heading} </span> <br />{contactTexts[1].text}</p>
                 <a href="mailto:makeartanhear8@gmail.com?cc=harikalyan91tron@gmail.com">
                   <button
                     className="interiorBtnModal"
@@ -154,11 +126,77 @@ export default function Parallaxwork({ texts, screenHeight }) {
                       marginTop: "10px",
                     }}
                   >
-                    .com 
+                    Mail us@
+                    <MdOutlineEmail />
                   </button>
                 </a>
-              </div>
-            </div>
+             </div>
+              </div> 
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slideParallax">
+             <div className="textParallax" data-swiper-parallax="-100">
+             <div>
+             <p> <span className="fs-1">{contactTexts[2].heading} </span> <br />{contactTexts[2].text}</p>
+             <a href="tel:+919148911954">
+                  <button
+                    className="interiorBtnModal"
+                    style={{
+                      boxShadow: "10px 5px 0.6rem black",
+                      padding: "10px",
+                      marginTop: "10px",
+                    }}
+                  >
+                    Call
+                    <MdOutlinePhoneAndroid />
+                  </button>
+                </a>
+                <a href="mailto:makeartanhear8@gmail.com?cc=harikalyan91tron@gmail.com">
+                  <button
+                    className="interiorBtnModal mx-2"
+                    style={{
+                      boxShadow: "10px 5px 0.6rem black",
+                      padding: "10px",
+                      marginTop: "10px",
+                    }}
+                  >
+                    Mail
+                    <MdOutlineEmail />
+                  </button>
+                </a>
+             </div>
+                
+              </div> 
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slideParallax">
+             <div className="textParallax" data-swiper-parallax="-100">
+                <div>
+                <p> <span className="fs-1">{contactTexts[3].heading} </span> <br />  {contactTexts[3].text}</p>
+                <a href="mailto:makeartanhear8@gmail.com?cc=harikalyan91tron@gmail.com">
+                  <button
+                    className="interiorBtnModal"
+                    style={{
+                      boxShadow: "10px 5px 0.6rem black",
+                      padding: "10px",
+                      marginTop: "10px",
+                    }}
+                  >
+                    Careers 
+                  </button>
+                </a>
+                </div>
+              </div> 
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slideParallax">
+             <div className="textParallax" data-swiper-parallax="-100">
+              <div>
+             <p className="fs-4"> <span className="fs-1"><MdLocationPin />{contactTexts[4].heading} </span> <br />{contactTexts[4].text}</p></div>
+              </div> 
+          </SwiperSlide>
+
+          <SwiperSlide className="swiper-slideParallax">
+          <div className="textParallax" data-swiper-parallax="-100">
+            <p className="fs-1">{contactTexts[5].heading}  {contactTexts[5].text}</p>
+             </div>
           </SwiperSlide>
         </Swiper>
       </div>

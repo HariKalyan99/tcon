@@ -24,7 +24,7 @@ const Header = () => {
           <li className="nav-item ln  px-4"><a className=" navigateLink" href="#product" ><span className='insideH1'>Product</span></a></li>
           <li className="nav-item ln  px-4"><a className=" navigateLink" href="#features" ><span className='insideH1'>Features</span></a></li>
           <li className="nav-item ln  px-4"><a className=" navigateLink" href="#projects" ><span className='insideH1'>Projects</span></a></li>
-          <li className="nav-item ln  px-4"><a className=" navigateLink" href="#support" ><span className='insideH1'>Our Workers</span></a></li>
+          <li className="nav-item ln  px-4"><a className=" navigateLink" href="#workgallery" ><span className='insideH1'>Work gallery</span></a></li>
           <li className="nav-item ln  px-4"><a className=" navigateLink" href="#contact" ><span className='insideH1'>Contact us</span></a></li>
         </ul>
       </div>
